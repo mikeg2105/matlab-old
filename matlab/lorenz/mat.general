@@ -1,0 +1,11 @@
+file = /home/mike/proj/math/scilab/lorenz/matout.out
+points = 2000
+format = ascii
+interleaving = record-vector
+header = lines 1
+field = locations, field0
+structure = 2-vector, scalar
+type = float, float
+dependency = positions, positions
+
+end

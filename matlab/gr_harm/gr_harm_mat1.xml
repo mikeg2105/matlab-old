@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by Michael Kenneth Griffiths (Self Employed) -->
+<iosim filename="MatSim_mat1.xml">
+	<simulation class="MatXMLSimulation" createmethod="1" name="gr_harm_mat1" simulantclass="MatModel" simulanttype="0">
+		<props flag="5" name="MatSimProps" numprops="3">
+			<prop flag="1" index="0" name="JobName">
+				<string>gr_harm_mat1</string>
+			</prop>
+			<prop flag="1" index="1" name="Type(0=matlab,1=scilab)">
+				<int>0</int>
+			</prop>
+			<prop flag="1" index="2" name="SamplingMethod(0=regular,1=random,2=weighted random,3=list)">
+				<int>0</int>
+			</prop>
+		</props>
+		<steps configstepfreq="1" statestepfreq="1">20</steps>
+		<fileprops configfilename="mattest1cfg" configreadmethod="1" configwritemethod="1" simreadmethod="1" simwritemethod="1" statefilename="mattest1state" statereadmethod="1" statewritemethod="1"/>
+		<model class="MatModel" createmethod="1" index="0" name="MatModelDefault">
+			<props flag="7" name="MatModelProps" numprops="9">
+				<prop flag="1" index="1" name="Paths">
+					<array n="1">
+						<string>gr_harm</string>
+					</array>
+				</prop>
+				<prop flag="7" index="2" name="FloatParamNames">
+					<array n="9">
+						<string>iterations</string>
+						<string>nx</string>
+						<string>ny</string>
+						<string>nz</string>
+						<string>dx</string>
+						<string>dy</string>
+						<string>dz</string>
+						<string>par1</string>
+						<string>par2</string>
+					</array>
+				</prop>
+				<prop flag="1" index="3" name="FloatParams">
+					<array n="9">
+						<vec size="3">100 0 100</vec>
+						<vec size="3">40 0 40</vec>
+						<vec size="3">40 0 40</vec>
+						<vec size="3">40 0 40</vec>
+						<vec size="3">0.02 0.0 0.02</vec>
+						<vec size="3">0.02 0.0 0.02</vec>
+						<vec size="3">0.02 0.0 0.02</vec>						
+						<vec size="3">5 5 20</vec>
+						<vec size="3">-2 1 2</vec>					
+					</array>
+				</prop>
+				<prop flag="1" index="5" name="VecParams">
+					<array n="0">
+						
+					</array>
+				</prop>
+				<prop flag="7" index="6" name="VecParamNames">
+					<array n="0">
+						
+					</array>
+				</prop>
+				<prop flag="1" index="8" name="Commands">
+					<array n="2">
+						<string>h3(iterations,nx,ny,nz,dx,dy,dz,par1,par2,jobname);</string>
+						<string>exit;</string>
+					</array>
+				</prop>
+			</props>
+		</model>
+	</simulation>
+</iosim>

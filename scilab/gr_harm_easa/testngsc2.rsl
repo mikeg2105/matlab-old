@@ -1,0 +1,8 @@
+&(executable=/home/ngs0176/tools/scilab/scilab-3.1.1/bin/scilab )
+(arguments= -nb -nw -f test1_9.sce)
+(directory=/home/ngs0176/proj/math/scilab/gr_harm/in )
+(maxCpuTime=600 )
+(stdout=c1exp4.out)
+(stderr=c1exp4.err)
+
+

@@ -1,0 +1,11 @@
+100
+32
+0.2
+0.001
+0.
+********** H3expresso input.par *****************
+Number of Iterations to run
+3d cube size nx=ny=nz
+Spatial resolution dx=dy=dz
+Amplitude of the waves
+shape (mvalue) of the waves (from -2 to 2)

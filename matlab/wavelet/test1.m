@@ -1,0 +1,33 @@
+np=63;  %num data points
+omega0=52;  %morlet frequency
+scale=0.2;  %time scaling
+
+v=-pi:0.1:pi;
+x=rand(1,np);
+y=x+0.2*sin(8*v)+0.3*sin(16*v);
+subplot(2,2,1); plot(v, y);
+
+for ic=1:np; mw1(ic)=morlet(v(ic),omega0);end
+subplot(2,2,2); plot(v, mw1);
+
+for ic=1:np; mwv1(ic)=wavelett(y,np,ic,1,scale,omega0);end
+subplot(2,2,3); plot(v, mwv1);
+
+for ic=1:np; mwv1(ic)=wavelett(y,np,ic,1,2*scale,omega0);end
+subplot(2,2,4); plot(v, mwv1);
+
+%for ic=1:np; mwv1(ic)=wavelett(y,np,ic,1,7,omega0);end
+%subplot(2,2,4); plot(v, mwv1);
+
+wv=wavesm(y,np,np,1,scale,omega0);
+%surf(wv, 'LineStyle', 'none')
+%xlabel('shift')
+%ylabel('tscale')
+
+
+
+%for i=1:63; mw(i)=morlet(v(i),2);end
+%for i=1:63; mws1(i)=shiftedmorlet(v(i),2,1,1,16);end
+%for i=1:63; mwc1(i)=conv(0.1*sin(v(i)),10,1,1,1,2);end
+%for i=1:63; mwcs1(i)=conj(shiftedmorlet(v(i),2,1,1,16));end
+%for i=1:63; mwv1(i)=wavelett(v,63,i,1,1,8);end

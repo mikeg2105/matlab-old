@@ -1,0 +1,14 @@
+file=out/jobt1.out
+grid 51 X 51
+format = ascii 
+ interleaving = field 
+ majority = row 
+ header = lines 1 
+series =  8  , 1, 1, separator=lines 1
+field = v, rho,p,b 
+ structure = 2-vector, scalar,scalar,2-vector 
+ type = float, float, float, float  
+ dependency = positions, positions,positions, positions  
+ positions = regular,regular, 0, 1,0,1 
+ end 
+ 

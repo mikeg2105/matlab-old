@@ -1,0 +1,6 @@
+This demo runs in Scilab. It consists of
+a Scilab script performing multiple Scicos
+simulations. Simply in Scilab type:
+
+exec batch1.sci
+

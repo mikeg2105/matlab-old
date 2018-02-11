@@ -1,0 +1,7 @@
+file=out/test1_1_gxx.dat
+grid=6 x 6 x 6
+format = ascii
+interleaving = record
+majority = row
+header = lines 1
+

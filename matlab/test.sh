@@ -1,0 +1,1 @@
+echo $GMPI_ID

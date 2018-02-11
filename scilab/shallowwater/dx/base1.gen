@@ -1,0 +1,5 @@
+format = ascii
+interleaving = field
+majority = row
+header = lines 1
+

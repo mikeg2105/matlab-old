@@ -1,0 +1,46 @@
+exec('..\xmlutils\writexml.m');
+exec('..\xmlutils\writex3d.m');
+exec('diffuse_utils.m');
+exec('diffuse_x3d.m');
+exec('diffuse.m');
+exec('diffuse_drv.m');
+chdir('results');
+
+//readinput(file)
+n1=50;
+n2=50;
+n3=1;
+diff=0.015;
+h=0.05;
+nsteps=1000;
+nsubsteps=10;
+deltat=0.01;
+concweight=10.0;
+sourceval=0.01;
+sinkval=0.01;
+
+
+in(1)=diff  //d
+  in(2)=n1   //n1
+  in(3)=n2    //n2
+  in(4)=n3  //n3
+  in(5)=h    //h
+  
+  //For each species
+  //create
+  //1. Initial concentration
+  //2. Sources
+  //3. Sinkss
+  //4. species
+  //concsin=rand(n1,n2,n3);
+concsin=zeros(n1,n2,n3);
+concsin(25,25,1)=5;
+  sources=zeros(n1,n2,n3);
+  //sources(n1/2,n2/2,1)=rand();
+  //sources(1,1,1)=sourceval;
+  sinks=zeros(n1,n2,n3);
+  //sinks(n1,n2,n3)=sinkval;
+  //read initial configuration from an old one
+	sirout=mydiffuse(nsteps,nsubsteps,deltat, in,concsin,sources,sinks);
+
+exit();

@@ -1,0 +1,14 @@
+universe = vanilla
+owner =cs1mkg
+environment = path=c:\windows\system32;c:\Program Files\scilab-4.0\bin
+executable = scijob.bat
+arguments = h3_drv.sce
+transfer_input_files = scijob.bat, h3_drv.sce, initial.sce, analywave.sce,
+spheretocart.sce, invert.sce, centralderiv.sce, curelation.sce, method.sce,
+sources.sce, fluxes.sce, boundaries.sce, onebound.sce
+WhenToTransferOutput= ON_EXIT_OR_EVICT
+transfer_output_files = myscitest.dat
+output = scijob.out
+error = scijob.err
+log = scijob.log
+queue

@@ -1,0 +1,15 @@
+file=/scratch/cs1mkg/results/gr_harm_easa/out/test2_4_qzz.dat
+grid= 30 x 30 x 30
+format = ascii
+interleaving = record
+majority = row
+header = lines 1
+
+series= 100 , 1, 1, separator= lines 1
+field = field0
+structure = scalar
+type = float
+dependency = positions
+positions = regular, regular, regular, 0, 1, 0, 1, 0, 1
+
+end

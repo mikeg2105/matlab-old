@@ -1,0 +1,9 @@
+chdir('C:\cygwin\home\mike\proj\math\scilab\diffuse');
+exec('C:\cygwin\home\mike\proj\math\scilab\xmlutils\writexml.m');
+exec('C:\cygwin\home\mike\proj\math\scilab\xmlutils\writex3d.m');
+exec('C:\cygwin\home\mike\proj\math\scilab\diffuse\diffuse_utils.m');
+exec('C:\cygwin\home\mike\proj\math\scilab\diffuse\diffuse_x3d.m');
+exec('C:\cygwin\home\mike\proj\math\scilab\diffuse\diffuse.m');
+exec('C:\cygwin\home\mike\proj\math\scilab\diffuse\diffuse_drv.m');
+exec('C:\cygwin\home\mike\proj\math\scilab\diffuse\diffuse_analysis.m');
+chdir('results');

@@ -1,0 +1,7 @@
+file=/scratch/cs1mkg/results/gr_harm_easa/out/test2_4_qzz.dat
+grid= 30 x 30 x 30
+format = ascii
+interleaving = record
+majority = row
+header = lines 1
+

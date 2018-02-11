@@ -1,0 +1,15 @@
+This demo is an example of a Scicos diagram
+including implicit blocks. It realizes in
+particular an electrical circuit. It also shows how 
+Modelica can be used to construct new implicit
+blocks (in this case an ideal Op Amp). Opening
+the diagram is done as follows:
+
+exec initanimpend.sci
+
+Note that this demo requires a C compiler
+because Modelica blocks are used to generate
+C code which is compiled and linked with Scilab
+before simulation. This process is completely
+transparent to the user.
+

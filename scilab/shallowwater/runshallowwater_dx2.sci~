@@ -1,0 +1,181 @@
+
+// Display mode
+mode(0);
+
+// Display warning for floating point exception
+ieee(1);
+
+//Steven McHale
+//Tsunami Model
+//Shallow-Water Wave Equation
+//Crank-Nicholson Discretization
+
+clear;
+//clf;
+clc;
+
+// Constants
+g = 9.81;
+u0 = 0;
+v0 = 0;
+b = 0;
+h0 = 5030;
+
+// Define the x domain
+ni = 51;
+xmax = 100000;
+dx = xmax/(ni-1);
+x = 0:dx:xmax;
+
+// Define the y domain
+nj = 51;
+ymax = 100000;
+dy = ymax/(nj-1);
+y = 0:dy:ymax;
+
+// Define the wavespeed
+wavespeed = u0+sqrt(g*(h0-b));
+
+// Define time-domain
+dt = (0.68*dx)/wavespeed;
+//tmax = 1500;
+tmax=150;
+
+//t = [0:dt:tdomain];
+t = 1:dt:tmax;
+courant = (wavespeed*dt)/dx;
+
+// Build empty u, v, b matrices
+u = zeros(max(size(x)),max(size(y)));
+v = zeros(max(size(x)),max(size(y)));
+b = zeros(max(size(x)),max(size(y)));
+unew = zeros(max(size(x)),max(size(y)));
+vnew = zeros(max(size(x)),max(size(y)));
+// Define h
+h = zeros(max(size(x)),max(size(y)));
+hnew = zeros(max(size(x)),max(size(y)));
+h(:,:,1) = 5000;
+h((45000/100000)*(max(size(x))-1)+1:floor((55000/100000)*(max(size(x))-1)+1),(45000/100000)*(max(size(y))-1)+1:floor((55000/100000)*(max(size(y))-1)+1)) = 5030;
+
+//Define b
+for i = 1:max(size(x))
+  if x(i)>20001 then
+    b(:,i) = 0;
+  elseif x(i)<20000 then
+    b(:,i) = (5000/20000)*(20000-x(i));
+  end;
+end;
+
+//if running using the white rose grid easa application portal 
+//we set the directory to ''
+//and extract the data 
+//directory='out/'
+directory='out/'
+jobname='t1';
+outfile=directory+'job'+jobname+'.out';
+formfile=directory+'jobform'+jobname+'.out';
+dxgenfile=directory+'job'+jobname+'.general';
+dxformgenfile=directory+'job'+jobname+'_form.general';
+fdform=mopen(formfile,'w');
+  mfprintf(fdform, '%d %d %d\n',max(size(t))-1, ni, nj);
+mclose(fdform);
+fd=mopen(outfile,'w');
+// Employ Lax
+for n = 1:max(size(t))-1
+  for i = 2:ni-1
+    for j = 2:nj-1
+    
+    
+       unew(i,j) = (u(i+1,j)+u(i-1,j)+u(i,j+1)+u(i,j-1))/4-(0.5*(dt/dx))*((u(i+1,j)^2)/2-(u(i-1,j)^2)/2)-((0.5*(dt/dy))*v(i,j))*(u(i,j+1)-u(i,j-1))-((0.5*g)*(dt/dx))*(h(i+1,j)-h(i-1,j));
+    
+    
+    
+      vnew(i,j) = (v(i+1,j)+v(i-1,j)+v(i,j+1)+v(i,j-1))/4-(0.5*(dt/dy))*((v(i,j+1)^2)/2-(v(i,j+1)^2)/2)-((0.5*(dt/dx))*u(i,j))*(v(i+1,j)-v(i-1,j))-((0.5*g)*(dt/dy))*(h(i,j+1)-h(i,j-1));
+    
+    
+    
+    
+    
+      hnew(i,j) = (h(i+1,j)+h(i-1,j)+h(i,j+1)+h(i,j-1))/4-((0.5*(dt/dx))*u(i,j))*(h(i+1,j)-b(i+1,j)-(h(i-1,j)-b(i-1,j)))-((0.5*(dt/dy))*v(i,j))*(h(i,j+1)-b(i,j+1)-(h(i,j-1)-b(i,j-1)))-((0.5*(dt/dx))*(h(i,j)-b(i,j)))*(u(i+1,j)-u(i-1,j))-((0.5*(dt/dy))*(h(i,j)-b(i,j)))*(v(i,j+1)-v(i,j-1));
+    
+    end;
+  end;
+
+  // Define Boundary Conditions
+  u(1,:,n+1) = 2.5*u(2,:,n+1)-2*u(3,:,n+1)+0.5*u(4,:,n+1);
+  u(max(size(x)),:,n+1) = 2.5*u(ni-1,:,n+1)-2*u(ni-2,:,n+1)+0.5*u(ni-3,:,n+1);
+  u(:,1,n+1) = 2.5*u(:,2,n+1)-2*u(:,3,n+1)+0.5*u(:,4,n+1);
+  u(:,max(size(y)),n+1) = 2.5*u(:,nj-1,n+1)-2*u(:,nj-2,n+1)+0.5*u(:,nj-3,n+1);
+
+  v(1,:,n+1) = 2.5*v(2,:,n+1)-2*v(3,:,n+1)+0.5*v(4,:,n+1);
+  v(max(size(x)),:,n+1) = 2.5*v(ni-1,:,n+1)-2*v(ni-2,:,n+1)+0.5*v(ni-3,:,n+1);
+  v(:,1,n+1) = 2.5*v(:,2,n+1)-2*v(:,3,n+1)+0.5*v(:,4,n+1);
+  v(:,max(size(y)),n+1) = 2.5*v(:,nj-1,n+1)-2*v(:,nj-2,n+1)+0.5*v(:,nj-3,n+1);
+
+  h(1,:,n+1) = 2.5*h(2,:,n+1)-2*h(3,:,n+1)+0.5*h(4,:,n+1);
+  h(max(size(x)),:,n+1) = 2.5*h(ni-1,:,n+1)-2*h(ni-2,:,n+1)+0.5*h(ni-3,:,n+1);
+  h(:,1,n+1) = 2.5*h(:,2,n+1)-2*h(:,3,n+1)+0.5*h(:,4,n+1);
+  h(:,max(size(y)),n+1) = 2.5*h(:,nj-1,n+1)-2*h(:,nj-2,n+1)+0.5*h(:,nj-3,n+1);
+  
+  //Write data to output
+ mfprintf(fd, '%d %d %d\n',n, ni, nj);
+ for j1=1:ni
+  for j2=1:nj
+      mfprintf(fd, '%f %f %f\n',u(j1,j2,n),v(j1,j2,n),h(j1,j2,n)-5000);
+      //mfprintf(fd, '%f\n',h(j1,j2,n)-5000);
+  end
+  
+ end
+//mfprintf(fd, '\n');  
+
+end;
+mclose(fd);
+
+
+//generate dx general file for this data set
+//file=out/job.out
+//grid 51 x 51
+//format = ascii
+//interleaving = field
+//majority = row
+//header = lines 1
+
+//series =  24 , 1, 1, separator=lines 1
+//field = field0, field1
+//structure = 2-vector, scalar
+//type = float, float
+//dependency = positions, positions
+//positions = regular,regular, 0, 1,0,1
+
+//end
+dxgenfile=directory+'job'+jobname+'.general';
+
+fdform=mopen(dxgenfile,'w');
+  mfprintf(fdform, 'file=%s\n', 'out/job'+jobname+'.out');
+  mfprintf(fdform,'grid %d X %d\n',ni,nj);
+  mfprintf(fdform,'format = ascii \n interleaving = field \n majority = row \n header = lines 1 \n');
+  mfprintf(fdform, 'series =  %d  , 1, 1, separator=lines 1\n',max(size(t))-1);
+  mfprintf(fdform, 'field = field0, field1 \n structure = 2-vector, scalar \n type = float, float  \n dependency = positions, positions  \n positions = regular,regular, 0, 1,0,1 \n end \n ');
+mclose(fdform);
+
+
+//file=out/jobform.out
+//grid = 1
+//format = ascii
+//interleaving = record
+//majority = row
+//field = nsteps, nx, ny
+//structure = scalar, scalar, scalar
+//type = int, int, int
+//dependency = positions, positions, positions
+//positions = regular, 0, 1
+
+//end
+
+dxformgenfile=directory+'job'+jobname+'_form.general';
+fdform=mopen(dxformgenfile,'w');
+  mfprintf(fdform, 'file=%s\n', 'out/jobform'+jobname+'.out');
+  mfprintf(fdform,'grid=1\n');
+  mfprintf(fdform,'format = ascii \n interleaving = record \n majority = row \n');
+  mfprintf(fdform, 'field = nsteps, ,nx, ny \n structure = scalar, scalar, scalar \n type = int, int, int  \n dependency = positions, positions,positions  \n positions = regular, 0, 1 \n end \n ');
+mclose(fdform);  

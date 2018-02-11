@@ -1,0 +1,16 @@
+ 
+-->mode(-1)
+ 
+ loading plotlib version 0.196   
+
+ Only in Window Mode 
+outfile=directory+'job'+jobname+'.out';
+          !--error 4 
+undefined variable : directory               
+at line      73 of exec file called by :    
+exec("runshallowwatermg2_dx.sce");
+line    16 of exec file called by :    
+exec('SCI/scilab.star',-1);;exec('subjobscript.sce',-1)
+ 
+ 
+-->

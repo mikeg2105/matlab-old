@@ -1,0 +1,11 @@
+file=out/jobmkgt5.out
+grid= 21 x 21 x 21
+format = ascii 
+ interleaving = field 
+ header = lines 7 
+field = locations,bfield 
+ structure = 3-vector, 3-vector 
+ type = float, float  
+ dependency = positions, positions  
+ end 
+ 

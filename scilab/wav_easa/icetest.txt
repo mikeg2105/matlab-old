@@ -1,0 +1,4 @@
+cs1mkg
+suilven.shef.ac.uk
+8080
+temp/results_easa/jobname/wav2d_gridclient1.net cs1mkg iceberg.shef.ac.uk 0 0

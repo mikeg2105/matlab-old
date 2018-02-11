@@ -1,0 +1,16 @@
+file = out/job1.out
+grid 100 x 100
+format = ascii
+interleaving = record
+majority = row
+header = lines 1
+
+series = 4, 1, 1, separator=lines 1
+field = waveamplitude
+structure = scalar
+type = float
+dependency = positions
+positions = regular, regular, 0, 1, 0, 1
+
+end
+

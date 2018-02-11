@@ -1,0 +1,28 @@
+function [myruntime]=transporttestpar3(nsamples)
+    nsamples=1;
+    msiz=[48 480 4800];  %matrix sizes to test
+    %msiz=[480]; 
+    myruntime=zeros(1,nsamples)
+    %k=3;
+  
+    for k=1:3
+    tic;
+    image=zeros(msiz(k), msiz(k));
+    if labindex==1
+        image=image+1;
+    end
+    imsize=size(image)
+    %image=labBroadcast(1,image);
+    %labBarrier;
+    imsect=distributed(image,distributor())
+    
+     
+     %matrix scattered now perform an operation
+     limsect=localPart(imsect)+labindex;
+     image=gather(limsect);
+     myruntime(k)=toc
+     
+
+    end
+
+

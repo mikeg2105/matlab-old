@@ -1,0 +1,42 @@
+//hypergeometric
+//return a 2d matrix of wave amplitudes
+function [hypergeo]=hypergeometric(a,b,z,N)
+  i=1;
+  hypergeo=0;
+  pocha=1;
+  pochb=1;
+  fac=1;
+  while i<N
+    pocha=pocha*(a+i-1);
+    pochb=pochb*(b+i-1);  
+    fac=fac*i;
+    hypergeo=hypergeo+((pocha*z^i)/(pochb*fac));
+  end;
+  return hypergeo; 
+endfunction
+
+function [solmhdconv]=solmhdconv(z,k,z0,a,m,c2,N)
+  
+  return(c2*exp((-k)*(z+z0))*hypergeometric(-a,m+2,2*k*z+2*k*z0));
+  
+endfunction
+
+function [solmhdconv]=solmhdconv(z,k,z0,a,m,c2,N)
+  
+  return(c2*exp((-k)*(z+z0))*hypergeometric(-a,m+2,2*k*z+2*k*z0));
+  
+endfunction
+
+function [omega]=omega(gamma,csp,l,beta,v,B,pp)
+
+rsun=669*1000000.0;
+m=1.0/(gamma-1);
+k=(l*(l+1))^0.5/rsun;
+
+  
+  return omega;
+  
+endfunction
+
+
+

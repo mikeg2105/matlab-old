@@ -1,0 +1,72 @@
+
+// Display mode
+mode(0);
+
+// Display warning for floating point exception
+ieee(1);
+
+
+
+clear;
+//clf;
+clc;
+
+// Constants
+g = 9.81;
+u0 = 0;
+v0 = 0;
+b = 0;
+h0 = 5030;
+k=1;
+
+// Define the x domain
+ni = 51;
+xmax = 100000;
+dx = xmax/(ni-1);
+x = 0:dx:xmax;
+
+// Define the y domain
+nj = 51;
+ymax = 100000;
+dy = ymax/(nj-1);
+y = 0:dy:ymax;
+
+// Define the wavespeed
+wavespeed = u0+sqrt(g*(h0-b));
+
+// Define time-domain
+dt = (0.68*dx)/wavespeed;
+tmax = 1500;
+//t = [0:dt:tdomain];
+t = 1:dt:tmax;
+courant = (wavespeed*dt)/dx;
+
+// Build empty u, v, b matrices
+u = zeros(max(size(x)),max(size(y)),max(size(t)));
+
+
+
+
+
+// Employ Lax
+for n = 1:max(size(t))-1
+  for i = 2:ni-1
+    for j = 2:nj-1
+    
+    
+      u(i,j,n+1) = u(i,j,n)+dt*dx*k*(4*u(i,j,n)-u(i+1,j,n)-u(i-1,j,n)-u(i,j+1,n)-u(i,j-1,n));
+    
+ 
+    
+    end;
+  end;
+
+  // Define Boundary Conditions
+  //u(1,:,n+1) = 2.5*u(2,:,n+1)-2*u(3,:,n+1)+0.5*u(4,:,n+1);
+  //u(max(size(x)),:,n+1) = 2.5*u(ni-1,:,n+1)-2*u(ni-2,:,n+1)+0.5*u(ni-3,:,n+1);
+  //u(:,1,n+1) = 2.5*u(:,2,n+1)-2*u(:,3,n+1)+0.5*u(:,4,n+1);
+  //u(:,max(size(y)),n+1) = 2.5*u(:,nj-1,n+1)-2*u(:,nj-2,n+1)+0.5*u(:,nj-3,n+1);
+
+
+
+end;

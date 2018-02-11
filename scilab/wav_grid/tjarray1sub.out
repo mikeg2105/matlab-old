@@ -1,0 +1,2322 @@
+
+                              < M A T L A B >
+                  Copyright 1984-2004 The MathWorks, Inc.
+                  Version 7.0.1.24704 (R14) Service Pack 1
+                             September 13, 2004
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_20_5_20_6/')
+- Getting default credential
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_20_5_20_6.sce
+
+
+to =
+
+tj1_1_20_5_20_6/tj1_1_20_5_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_20_5_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 10945 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_20_5_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_20_5_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_20_5_20_12.sce
+
+
+to =
+
+tj1_1_20_5_20_12/tj1_1_20_5_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_20_5_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 10959 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_20_5_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_20_5_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_20_5_5_6.sce
+
+
+to =
+
+tj1_1_20_5_5_6/tj1_1_20_5_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_20_5_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 989 bytes in 1 files.
+221-Total traffic for this session was 10943 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_20_5_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_20_5_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_20_5_5_12.sce
+
+
+to =
+
+tj1_1_20_5_5_12/tj1_1_20_5_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_20_5_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 10945 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_20_5_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_20_20_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_20_20_20_6.sce
+
+
+to =
+
+tj1_1_20_20_20_6/tj1_1_20_20_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_20_20_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 10959 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_20_20_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_20_20_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_20_20_20_12.sce
+
+
+to =
+
+tj1_1_20_20_20_12/tj1_1_20_20_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_20_20_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 995 bytes in 1 files.
+221-Total traffic for this session was 10961 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_20_20_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_20_20_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_20_20_5_6.sce
+
+
+to =
+
+tj1_1_20_20_5_6/tj1_1_20_20_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_20_20_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 10945 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_20_20_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_20_20_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_20_20_5_12.sce
+
+
+to =
+
+tj1_1_20_20_5_12/tj1_1_20_20_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_20_20_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 10959 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_20_20_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_40_5_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_5_20_6.sce
+
+
+to =
+
+tj1_1_40_5_20_6/tj1_1_40_5_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_5_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 10945 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_5_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_40_5_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_5_20_12.sce
+
+
+to =
+
+tj1_1_40_5_20_12/tj1_1_40_5_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_5_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 10959 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_5_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_40_5_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_5_5_6.sce
+
+
+to =
+
+tj1_1_40_5_5_6/tj1_1_40_5_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_5_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 989 bytes in 1 files.
+221-Total traffic for this session was 10943 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_5_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_40_5_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_5_5_12.sce
+
+
+to =
+
+tj1_1_40_5_5_12/tj1_1_40_5_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_5_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 10945 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_5_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_40_20_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_20_20_6.sce
+
+
+to =
+
+tj1_1_40_20_20_6/tj1_1_40_20_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_20_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 10959 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_20_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_40_20_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_20_20_12.sce
+
+
+to =
+
+tj1_1_40_20_20_12/tj1_1_40_20_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_20_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 995 bytes in 1 files.
+221-Total traffic for this session was 10961 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_20_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+iceberg.shef.ac.uk/jobmanager-sge
+
+
+ans = 
+
+    'iceberg.shef.ac.uk'    [1x33 char]    [1x32 char]
+
+>> gd_makedir('iceberg.shef.ac.uk' ,'tj1_1_40_20_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_20_5_6.sce
+
+
+to =
+
+tj1_1_40_20_5_6/tj1_1_40_20_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9724 bytes in 0 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+e.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_20_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 10945 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_20_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_1_40_20_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10591 bytes in 1 transfers.
+221-Thank you for using the FTP service on iceberg.shef.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_20_5_12.sce
+
+
+to =
+
+tj1_1_40_20_5_12/tj1_1_40_20_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_20_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_20_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_5_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_5_20_6.sce
+
+
+to =
+
+tj1_0_20_5_20_6/tj1_0_20_5_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_5_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_5_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_5_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_5_20_12.sce
+
+
+to =
+
+tj1_0_20_5_20_12/tj1_0_20_5_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_5_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_5_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_5_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_5_5_6.sce
+
+
+to =
+
+tj1_0_20_5_5_6/tj1_0_20_5_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_5_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 989 bytes in 1 files.
+221-Total traffic for this session was 15745 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_5_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_5_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_5_5_12.sce
+
+
+to =
+
+tj1_0_20_5_5_12/tj1_0_20_5_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_5_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_5_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_20_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_20_20_6.sce
+
+
+to =
+
+tj1_0_20_20_20_6/tj1_0_20_20_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_20_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_20_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_20_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_20_20_12.sce
+
+
+to =
+
+tj1_0_20_20_20_12/tj1_0_20_20_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_20_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 995 bytes in 1 files.
+221-Total traffic for this session was 15763 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_20_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_20_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_20_5_6.sce
+
+
+to =
+
+tj1_0_20_20_5_6/tj1_0_20_20_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_20_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_20_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_20_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_20_5_12.sce
+
+
+to =
+
+tj1_0_20_20_5_12/tj1_0_20_20_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_20_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_20_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_40_5_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_40_5_20_6.sce
+
+
+to =
+
+tj1_0_40_5_20_6/tj1_0_40_5_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_40_5_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_40_5_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_40_5_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_40_5_20_12.sce
+
+
+to =
+
+tj1_0_40_5_20_12/tj1_0_40_5_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_40_5_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_40_5_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_40_5_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_40_5_5_6.sce
+
+
+to =
+
+tj1_0_40_5_5_6/tj1_0_40_5_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_40_5_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 989 bytes in 1 files.
+221-Total traffic for this session was 15745 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_40_5_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_40_5_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_40_5_5_12.sce
+
+
+to =
+
+tj1_0_40_5_5_12/tj1_0_40_5_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_40_5_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_40_5_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_40_20_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_40_20_20_6.sce
+
+
+to =
+
+tj1_0_40_20_20_6/tj1_0_40_20_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_40_20_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_40_20_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_40_20_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_40_20_20_12.sce
+
+
+to =
+
+tj1_0_40_20_20_12/tj1_0_40_20_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_40_20_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 995 bytes in 1 files.
+221-Total traffic for this session was 15763 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_40_20_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_40_20_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_40_20_5_6.sce
+
+
+to =
+
+tj1_0_40_20_5_6/tj1_0_40_20_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_40_20_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_40_20_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+maxima.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('maxima.leeds.ac.uk' ,'tj1_0_40_20_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_40_20_5_12.sce
+
+
+to =
+
+tj1_0_40_20_5_12/tj1_0_40_20_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 9428 bytes in 0 transfers.
+221-Thank you for using the FTP service on maxima.leeds.ac.uk.
+221 Goodbye.
+Goodbye.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_40_20_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 10651 bytes in 1 transfers.
+221-Thank you for using the FTP service on maxima.leeds.ac.uk.
+221 Goodbye.
+dbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 10283 bytes in 1 transfers.
+221-Thank you for using the FTP service on maxima.leeds.ac.uk.
+221 Goodbye.
+dbye.
+
+jobfile =
+
+in/tj1_0_40_20_5_12.mat
+
+>> 

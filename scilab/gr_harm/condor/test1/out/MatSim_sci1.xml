@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<iosim filename="MatSim_sci1.xml">
+	<simulation class="MatXMLSimulation" createmethod="1" name="MatSim_sci1" simulantclass="MatModel" simulanttype="0">
+		<props flag="5" name="MatSimProps" numprops="3">
+			<prop flag="1" index="0" name="JobName">
+				<string>MatSim_sci1</string>
+			</prop>
+			<prop flag="1" index="1" name="Type(0=matlab,1=scilab)">
+				<int>1</int>
+			</prop>
+			<prop flag="1" index="2" name="SamplingMethod(0=regular,1=random,2=weighted random,3=list)">
+				<int>0</int>
+			</prop>
+		</props>
+		<steps configstepfreq="1" statestepfreq="1">9</steps>
+		<fileprops configfilename="mattest1cfg" configreadmethod="1" configwritemethod="1" simreadmethod="1" simwritemethod="1" statefilename="mattest1state" statereadmethod="1" statewritemethod="1"/>
+		<model class="MatModel" createmethod="1" index="0" name="MatModelDefault">
+			<props flag="7" name="MatModelProps" numprops="9">
+				<prop flag="1" index="1" name="Paths">
+					<array n="1">
+						<string>wave2d/wave2d.sce</string>
+					</array>
+				</prop>
+				<prop flag="7" index="2" name="FloatParamNames">
+					<array n="2">
+						<string>wavefreq</string>
+						<string>maxamplitude</string>
+					</array>
+				</prop>
+				<prop flag="1" index="3" name="FloatParams">
+					<array n="2">
+						<vec size="3">5 5 10</vec>
+						<vec size="3">20 0 20</vec>
+					</array>
+				</prop>
+				<prop flag="1" index="5" name="VecParams">
+					<array n="2">
+						<mat cols="2" rows="3">10 10 0 0 10 10 </mat>
+						<mat cols="2" rows="3">0.2 0.2 0.2 0.0 0.4 0.2 </mat>
+					</array>
+				</prop>
+				<prop flag="7" index="6" name="VecParamNames">
+					<array n="2">
+						<string>wavenumber</string>
+						<string>waveshift</string>
+					</array>
+				</prop>
+				<prop flag="1" index="8" name="Commands">
+					<array n="23">
+						<string>wavetype=1.000000;</string>
+						<string>nsteps=10.000000;</string>
+						<string>tstep=1.000000;</string>
+						<string>deltat=0.050000;</string>
+						<string>delta(1)=1.000000;</string>
+						<string>delta(2)=1.000000;</string>
+						<string>nmax(1)=100.000000;</string>
+						<string>nmax(2)=100.000000;</string>
+						<string>outfile=sprintf('%s.dat',jobname);</string>
+						<string>fd=mopen(outfile,'w');</string>
+						<string>for i=tstep:tstep+nsteps</string>
+						<string>z=wave2d(i*deltat, wavetype, maxamplitude, wavenumber, waveshift, wavefreq, delta,nmax);</string>
+						<string>//the following line was used to write header an descriptive lines for dx</string>
+						<string>//	mfprintf(fd, '%d %d %d\n'i,nmax(1),nmax(2));</string>
+						<string>for j1=1:nmax(1)</string>
+						<string>	for j2=1:nmax(2)</string>
+						<string>	mfprintf(fd, '%f ',z(j1,j2));</string>
+						<string>end</string>
+						<string>mfprintf(fd, '\n');</string>
+						<string>end</string>
+						<string>end</string>
+						<string>mclose(fd);</string>
+						<string>exit;</string>
+					</array>
+				</prop>
+			</props>
+		</model>
+	</simulation>
+</iosim>

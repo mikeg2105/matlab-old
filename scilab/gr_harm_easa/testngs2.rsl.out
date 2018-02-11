@@ -1,0 +1,6 @@
+
+Error, argument #4 (testngs2.rsl) : No such file or directory
+
+Syntax : globusrun [-help] [-f RSL file] [-s][-b][-d][...] [-r RM] [RSL]
+
+Use -help to display full usage.

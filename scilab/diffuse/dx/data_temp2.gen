@@ -1,0 +1,7 @@
+field = field0
+structure = scalar
+type = float
+dependency = positions
+positions = regular, regular, regular, 0, 1, 0, 1, 0, 1
+
+end

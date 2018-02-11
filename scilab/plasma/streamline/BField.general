@@ -1,0 +1,13 @@
+file = BField.dat
+grid = 41 x 41 x 41
+format = ascii
+interleaving = field
+majority = column
+header = lines 22
+field = BField
+structure = 3-vector
+type = float
+dependency = positions
+positions = regular, regular, regular, -10.0, 0.5, -10.0, 0.5, -10.0, 0.5
+
+end

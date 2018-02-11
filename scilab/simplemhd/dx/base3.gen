@@ -1,0 +1,8 @@
+field = field0,field1
+structure = 2-vector,scalar
+type = float,float
+dependency = positions,positions
+positions = regular,regular, 0, 1, 0,1
+
+end
+

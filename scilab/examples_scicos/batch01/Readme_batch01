@@ -1,0 +1,16 @@
+This demo runs in Scilab. It consists of
+two Scilab scripts performing multiple Scicos
+simulations for optimizing parameters a and
+b of a PI controller.
+To run them (it could take a few minutes):
+
+exec batch01.sci
+
+exec batch0.sci
+
+The corresponding Scicos diagram is Untitled0.cos
+and can be inspected by loading it in Scicos:
+
+scicos Untitled0.cos;
+
+

@@ -1,0 +1,16 @@
+Starting SMPD on comp40 ...
+rsh comp40 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -s -phrase MATLAB -port 28091
+All SMPDs launched
+"/usr/local/packages/matlab_mdcdem_r06b/bin/mw_mpiexec" -phrase MATLAB -port 28091 -l -n 1 -machinefile /tmp/1288091.1.parmatlab.q/machines -genvlist MDCE_DECODE_FUNCTION,MDCE_STORAGE_LOCATION,MDCE_STORAGE_CONSTRUCTOR,MDCE_JOB_LOCATION "/usr/local/packages/matlab_mdcdem_r06b/bin/worker" -parallel
+[0]                              < M A T L A B >
+[0]                  Copyright 1984-2006 The MathWorks, Inc.
+[0]                         Version 7.3.0.298 (R2006b)
+[0]                              August 03, 2006
+[0] 
+[0]  To get started, type one of these: helpwin, helpdesk, or demo.
+[0]  For product information, visit www.mathworks.com.
+[0] 
+
+Stopping SMPD on  comp40 ...
+rsh comp40 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -shutdown -phrase MATLAB -port 28091
+Exiting with code: 0

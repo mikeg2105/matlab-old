@@ -1,0 +1,17 @@
+function [jobstatus]=gd_results_sci(jobhandle)
+% 
+%   This script uses geodise toolbox to retrieve results
+% 
+status=gd_job_status(jobhandle);
+
+if status==-1
+    
+    
+elseif status==-1
+    
+elseif status==-1    
+end
+
+
+
+

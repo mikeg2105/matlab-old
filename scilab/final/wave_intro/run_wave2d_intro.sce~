@@ -1,0 +1,39 @@
+exec(wave2d.sce);
+
+wavetype=1; //stationary
+nsteps=5;
+maxamplitude=10;
+wavenumber(1)=1*2*%pi;
+wavenumber(2)=2*2*%pi;
+wavefreq=5;
+delta(1)=0.01;
+delta(2)=0.01;
+nmax(1)=100;
+nmax(2)=100;
+
+//Wave packet
+npackets=5;
+pwavfreq=2;
+pwavnum=7;
+
+//clf;
+x=1:1:nmax(1);
+y=1:1:nmax(2);
+clf;
+//plot3d1(x,y,zeros(nmax(1),nmax(2)));
+for i=1:nsteps
+
+  //clf;
+  //realtime(i);
+  z=wave2d(i, wavetype, maxamplitude, wavenumber, wavefreq, delta,nmax);
+  //plot3d1(x, y, z, 80, 88, 'X@Y@Z', [-1 1 1]);
+  plot3d1(x, y, z);
+  xset('wshow');
+  xset('wwpc');
+  //xset("Z", wave2d(i, wavetype, maxamplitude, wavenumber, wavefreq, delta,nmax));
+  //plot2d(x, wavepacket1d(i, wavetype, maxamplitude, wavenumber, wavefreq,pwavnum, pwavfreq, npackets, delta,nmax));
+  xpause(1000000);
+  
+
+
+end

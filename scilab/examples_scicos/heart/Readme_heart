@@ -1,0 +1,14 @@
+This Scicos demo contains a dynamical model for generating 
+synthetic electrocardiogram signals. The demo consists of
+a Scicos diagram and a Scilab script executed by the context
+of the Scicos diagram. 
+The model is based on the work of Patrick E. McSharry, Gari 
+Clifford, Lionel Tarassenko and Leonard A. Smith published in
+IEEE Transactions On Biomedical Engineering, 50(3),289-294, 
+March 2003. C and Matlab code are available from:
+http://www.physionet.org/physiotools/ecgsyn/paper/
+
+To run the demo simply type:
+
+scicos heart2.cos;
+

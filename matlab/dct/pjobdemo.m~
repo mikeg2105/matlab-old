@@ -1,0 +1,22 @@
+%simple demo script for matlab dce
+%test by Mike Griffiths 22nd January 2007
+resource = findResource('scheduler', 'configuration', 'sge');
+set(resource, 'configuration', 'sge');
+%resource=findResource('scheduler','type','generic');
+set(resource, 'SubmitFcn', @sgeSubmitFcn);
+set(resource, 'ParallelSubmitFcn', @sgeParallelBatchSubmitFcn);
+set(resource, 'ClusterMatlabRoot', '/usr/local/packages/matlab_mdcdem_r06b');
+
+parjob=createParallelJob(resource);
+set(parjob,'MinimumNumberOfWorkers',2);
+set(parjob,'MaximumNumberOfWorkers',2);
+%createTask(parjob, 'rand', 1, {3});
+createTask(parjob, 'myrandpar', 8, {5});
+
+submit(parjob);
+
+waitForState(parjob);
+parout = getAllOutputArguments(parjob);
+
+save('result2.mat');
+

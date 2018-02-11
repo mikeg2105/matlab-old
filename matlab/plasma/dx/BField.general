@@ -1,0 +1,12 @@
+file = BField.dat
+grid = 41 x 41 x 41
+format = ascii
+interleaving = field
+majority = column
+header = lines 22
+field = locations,BField
+structure = 3-vector, 3-vector
+type = float, float
+dependency = positions,positions
+
+end

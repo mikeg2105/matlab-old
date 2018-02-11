@@ -1,0 +1,63 @@
+%Executed from scilab using format and system boxes 
+%with the command:
+%  /usr/bin/scilex -nw -nb -f run_wave2d_dx.sce
+
+%wavetype=1; %stationary
+%nsteps=5;
+%maxamplitude=10;
+%wavenumber(1)=1*2*%pi;
+%wavenumber(2)=2*2*%pi;
+%wavefreq=5;
+%delta(1)=0.01;
+%delta(2)=0.01;
+%nmax(1)=100;
+%nmax(2)=100;
+%tstep=1;
+%exec("wave2d.sce");
+infile='wave2ddx_1.in';
+outfile='wave2ddx_1.out';
+
+%Read input
+fd=fopen(infile,'r');
+wavetype=fscanf(fd,'%d');
+nsteps=fscanf(fd,'%d');
+maxamplitude=fscanf(fd,'%f');
+wavenumber(1)=fscanf(fd,'%f');
+wavenumber(2)=fscanf(fd,'%f');
+wavefreq=fscanf(fd,'%f');
+delta(1)=fscanf(fd,'%f');
+delta(2)=fscanf(fd,'%f');
+nmax(1)=fscanf(fd,'%f');
+nmax(2)=fscanf(fd,'%f');
+deltat=fscanf(fd,'%f');
+tstep=fscanf(fd,'%d');
+fclose(fd);
+
+%Wave packet
+npackets=5;
+pwavfreq=2;
+pwavnum=7;
+
+%clf;
+x=1:1:nmax(1);
+y=1:1:nmax(2);
+
+fd=fopen(outfile,'w');
+
+for i=tstep:tstep+nsteps
+z=wave2d(i*deltat, wavetype, maxamplitude, wavenumber, wavefreq, delta,nmax);
+ 
+%Write data to output
+
+ fprintf(fd, '%d\n',i);
+ for j1=1:nmax(1)
+  for j2=1:nmax(2)
+      fprintf(fd, '%f',z(j1,j2));
+  end
+  fprintf(fd, '\n');
+ end
+
+end %end of cycling over steps
+mclose(fd);
+exit;
+

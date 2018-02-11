@@ -1,0 +1,48 @@
+Here are the changes w.r.t. to the Scilab version of 
+  Walter Di Carlo <walter.dicarlo@jrc.it> 03/04/99
+
+User visible changes:
+
+- The function has been renamed to  'DiffEvol'
+
+- The function (to minimize) is no longer a string
+  but the name of a Scilab function
+
+- XVmin XVmax must be column vectors now
+
+- The stepsize parameter F now has 2 components
+  in case of strategies 3 and 8
+
+
+Internal changes:
+
+- The indices of all matrices have been reversed
+  the first index is now 1:D
+  This enables better vectorization
+
+- All calls to Scilab's 'eval' (a relict of Matlab's feval)
+  have been replaced by direct calls to the function (which is
+  much faster)
+
+- constructions like  ones(size(A)) where A is a matrix don't work
+  in recent versions of Scilab; these have been replaced by
+  ones(A)
+
+- The separate function 'randperm' has been replaced by a call
+  to Scilab's internal 'grand' function (which is faster)
+
+- Methods 3 and 8 now use two different step sizes as with
+  method DE2 in the paper http://www.icsi.berkeley.edu/~storn/deshort1.ps
+
+- Some parameters (intput and output) have been renamed to better
+  reflect their usage
+
+- Tested with Scilab version 4.0
+
+2006/03/01
+
+Helmut Jarausch
+RWTH-Aachen university
+Germany
+
+(jarausch@igpm.rwth-aachen.de)

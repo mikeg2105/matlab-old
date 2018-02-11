@@ -1,0 +1,908 @@
+
+                              < M A T L A B >
+                  Copyright 1984-2004 The MathWorks, Inc.
+                  Version 7.0.1.24704 (R14) Service Pack 1
+                             September 13, 2004
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_1_40_20_5_12/')
+- Getting default credential
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_1_40_20_5_12.sce
+
+
+to =
+
+tj1_1_40_20_5_12/tj1_1_40_20_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_1_40_20_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_1_40_20_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_5_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_5_20_6.sce
+
+
+to =
+
+tj1_0_20_5_20_6/tj1_0_20_5_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_5_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_5_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_5_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_5_20_12.sce
+
+
+to =
+
+tj1_0_20_5_20_12/tj1_0_20_5_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_5_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_5_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_5_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_5_5_6.sce
+
+
+to =
+
+tj1_0_20_5_5_6/tj1_0_20_5_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_5_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 989 bytes in 1 files.
+221-Total traffic for this session was 15745 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_5_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_5_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_5_5_12.sce
+
+
+to =
+
+tj1_0_20_5_5_12/tj1_0_20_5_5_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_5_5_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_5_5_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_20_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_20_20_6.sce
+
+
+to =
+
+tj1_0_20_20_20_6/tj1_0_20_20_20_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_20_20_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 993 bytes in 1 files.
+221-Total traffic for this session was 15761 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_20_20_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_20_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_20_20_12.sce
+
+
+to =
+
+tj1_0_20_20_20_12/tj1_0_20_20_20_12.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_20_20_12/wave2d.sce
+
+- Getting default credential
+21-You have transferred 995 bytes in 1 files.
+221-Total traffic for this session was 15763 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_20_20_12.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+grid-compute.leeds.ac.uk/jobmanager-pbs
+
+>> gd_makedir('grid-compute.leeds.ac.uk' ,'tj1_0_20_20_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+i =
+
+     1
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/tj1_0_20_20_5_6.sce
+
+
+to =
+
+tj1_0_20_20_5_6/tj1_0_20_20_5_6.sce
+
+- Getting default credential
+21-You have transferred 0 bytes in 0 files.
+221-Total traffic for this session was 14538 bytes in 0 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+.
+
+i =
+
+     2
+
+
+from =
+
+/home/mike/proj/math/scilab/wave_intro/wav_grid/in/wave2d.sce
+
+
+to =
+
+tj1_0_20_20_5_6/wave2d.sce
+
+- Getting default credential
+21-You have transferred 991 bytes in 1 files.
+221-Total traffic for this session was 15747 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+  Files Transferred
+  Submitting job
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+
+jobfile =
+
+in/tj1_0_20_20_5_6.mat
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_20_20_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_40_5_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_40_5_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_40_5_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_40_5_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_40_20_20_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_40_20_20_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_40_20_5_6/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>>   Run wave model using geodise toolkit.
+
+numfiles =
+
+     1     2
+
+
+JOBMANAGER =
+
+snowdon.leeds.ac.uk/jobmanager-sge
+
+>> gd_makedir('snowdon.leeds.ac.uk' ,'tj1_0_40_20_5_12/')
+- Getting default credential
+21-You have transferred 645 bytes in 1 files.
+221-Total traffic for this session was 15393 bytes in 1 transfers.
+221-Thank you for using the FTP service on grid-compute.leeds.ac.uk.
+221 Goodbye.
+??? Error using ==> gd_makedir
+Java exception occurred: 
+java.net.ConnectException: Connection timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.globus.ftp.vanilla.FTPControlChannel.open(FTPControlChannel.java:116)
+	at org.globus.ftp.GridFTPClient.<init>(GridFTPClient.java:58)
+	at org.geodise.computational.FtpClient.makeDir(FtpClient.java:181).
+
+Error in ==> <a href="error:/home/mike/proj/math/matlab/geodsci/gd_submit_sci.m,20,1">gd_submit_sci at 20</a>
+gd_makedir(GLOBUSSERVER, DIRNAME);
+
+Error in ==> <a href="error:/home/mike/proj/math/scilab/wave_intro/wav_grid/myjobsubmit.m,8,1">myjobsubmit at 8</a>
+jobhandle=gd_submit_sci(jobname, node,infiles);
+
+>> 

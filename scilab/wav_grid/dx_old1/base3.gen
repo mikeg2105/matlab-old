@@ -1,0 +1,8 @@
+field = waveamplitude
+structure = scalar
+type = float
+dependency = positions
+positions = regular, regular, 0, 1, 0, 1
+
+end
+

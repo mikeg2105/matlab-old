@@ -1,0 +1,49 @@
+Starting SMPD on node63 ...
+rsh node63 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -s -phrase MATLAB -port 28594
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+All SMPDs launched
+"/usr/local/packages5/matlab_r2007b/bin/mw_mpiexec" -phrase MATLAB -port 28594 -l -n 4 -machinefile /tmp/1558594.1.parallelx22.q/machines -genvlist MDCE_DECODE_FUNCTION,MDCE_STORAGE_LOCATION,MDCE_STORAGE_CONSTRUCTOR,MDCE_JOB_LOCATION "/usr/local/packages5/matlab_r2007b/bin/worker" -parallel
+[2]                              < M A T L A B >
+[2]                  Copyright 1984-2007 The MathWorks, Inc.
+[2]                         Version 7.5.0.338 (R2007b)
+[2]                               August 9, 2007
+[1]                              < M A T L A B >
+[1]                  Copyright 1984-2007 The MathWorks, Inc.
+[1]                         Version 7.5.0.338 (R2007b)
+[1]                               August 9, 2007
+[0]                              < M A T L A B >
+[0]                  Copyright 1984-2007 The MathWorks, Inc.
+[0]                         Version 7.5.0.338 (R2007b)
+[0]                               August 9, 2007
+[3]                              < M A T L A B >
+[3]                  Copyright 1984-2007 The MathWorks, Inc.
+[3]                         Version 7.5.0.338 (R2007b)
+[3]                               August 9, 2007
+[2] 
+[2]  To get started, type one of these: helpwin, helpdesk, or demo.
+[2]  For product information, visit www.mathworks.com.
+[2] 
+[1] 
+[1]  To get started, type one of these: helpwin, helpdesk, or demo.
+[1]  For product information, visit www.mathworks.com.
+[1] 
+[0] 
+[0]  To get started, type one of these: helpwin, helpdesk, or demo.
+[0]  For product information, visit www.mathworks.com.
+[0] 
+[3] 
+[3]  To get started, type one of these: helpwin, helpdesk, or demo.
+[3]  For product information, visit www.mathworks.com.
+[3] 
+
+job aborted:
+rank: node: exit code[: error message]
+0: node63: -2
+1: node63: -2: application called MPI_Abort(MPI_COMM_WORLD, 42) - process 1
+2: node63: -2
+3: node63: -2
+
+Stopping SMPD on  node63 ...
+rsh node63 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -shutdown -phrase MATLAB -port 28594
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+Exiting with code: 42

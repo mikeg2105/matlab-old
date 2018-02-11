@@ -1,0 +1,7 @@
+https://grid-compute.leeds.ac.uk:64006/399/1128066620/ wave2ddx_1 ngs-c1
+https://grid-compute.leeds.ac.uk:64063/26406/1128067517/ wave2ddx_1 ngs-c1
+https://grid-compute.leeds.ac.uk:64010/9028/1128068048/ job1 ngs-c1
+https://grid-compute.oesc.ox.ac.uk:64031/13556/1128068608/ job1 ngs-c2
+https://snowdon.leeds.ac.uk:65005/32101/1128068873/ job1 snowdon
+https://snowdon.leeds.ac.uk:65005/4351/1128070254/ job2 snowdon
+https://grid-compute.leeds.ac.uk:64004/9345/1128070646/ job2 ngs-c1

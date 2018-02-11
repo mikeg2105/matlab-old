@@ -1,0 +1,7 @@
+file=results/diffuse2.dat
+grid= 20 x 20 x 1
+format = ascii
+interleaving = record
+majority = row
+header = lines 1
+

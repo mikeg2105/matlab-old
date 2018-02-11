@@ -1,0 +1,32 @@
+//perturbed MHD equations for convective zone
+N=10;  //order
+k=2.62/1000000.0;
+
+for i=1:100
+kin(i)=(1.0+1.62*i/100)/1000000.0;
+k=kin(i);
+rsun=696000000.0;  //m
+c2=1;
+g=274.0; //m/s^2
+V=50;  //m/s characteristic velocity  http://adsabs.harvard.edu/full/1962ApJ...135..474L
+omega=2.0*%pi*2.5/1000;  //2.5mHz
+omegad=omega-(k*V);  //doppler shifted frequency
+czero=6000.76;  //m/s isothermal atmosphere at temperature minimum
+
+//data from http://www.sns.ias.edu/~jnb/SNdata/Export/BS2005/bs05_agsop.dat
+rho0=2/10000; //kg/m^3 density of photosphere
+p0=6.661*100000000;  //N/m^2
+dp0dz=(0.77*100000000)/(0.001*rsun);
+drho0dz=(0.553)/(10.0*0.001*rsun);
+
+gammap=5/3;
+csdashsq=(dp0dz*gammap/rho0)-(drho0dz*gammap*p0/(rho0^2));
+m=((gammap*g)/(csdashsq))-1;
+z0=(czero^2)/(csdashsq);
+a=((m+1)/gammap)*(omegad^2/(2*g*k))
+z=0.5;
+
+
+delta(i)=solmhdconv(z,k,z0,a,m,c2,N);
+
+end

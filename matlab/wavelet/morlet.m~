@@ -1,0 +1,7 @@
+function [morlet]=morlet(eta, omega0)
+
+	morlet= pi^(-0.25)*exp(i*omega0*eta)*exp(-eta^2/2);
+    
+    morlet=(2*pi)^(-0.5)*exp(i*omega0/2)*sin((pi*eta/2)*(3*omega0/(2*pi)));
+
+%endfunction

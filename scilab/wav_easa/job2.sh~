@@ -1,0 +1,7 @@
+#!/bin/sh
+
+source ~/easawork/bin/easasetenv
+scilab -nb -nw -f job1.sce
+
+
+

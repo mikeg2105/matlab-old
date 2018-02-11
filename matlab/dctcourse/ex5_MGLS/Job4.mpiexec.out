@@ -1,0 +1,172 @@
+Starting SMPD on node67
+node30
+node36
+node27 ...
+rsh node67 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -s -phrase MATLAB -port 28598
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+rsh node30 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -s -phrase MATLAB -port 28598
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+rsh node36 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -s -phrase MATLAB -port 28598
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+rsh node27 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -s -phrase MATLAB -port 28598
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+All SMPDs launched
+"/usr/local/packages5/matlab_r2007b/bin/mw_mpiexec" -phrase MATLAB -port 28598 -l -n 16 -machinefile /tmp/1558598.1.parallelx22.q/machines -genvlist MDCE_DECODE_FUNCTION,MDCE_STORAGE_LOCATION,MDCE_STORAGE_CONSTRUCTOR,MDCE_JOB_LOCATION "/usr/local/packages5/matlab_r2007b/bin/worker" -parallel
+[11]                              < M A T L A B >
+[11]                  Copyright 1984-2007 The MathWorks, Inc.
+[11]                         Version 7.5.0.338 (R2007b)
+[11]                               August 9, 2007
+[9]                              < M A T L A B >
+[9]                  Copyright 1984-2007 The MathWorks, Inc.
+[9]                         Version 7.5.0.338 (R2007b)
+[9]                               August 9, 2007
+[8]                              < M A T L A B >
+[8]                  Copyright 1984-2007 The MathWorks, Inc.
+[8]                         Version 7.5.0.338 (R2007b)
+[8]                               August 9, 2007
+[6]                              < M A T L A B >
+[6]                  Copyright 1984-2007 The MathWorks, Inc.
+[6]                         Version 7.5.0.338 (R2007b)
+[6]                               August 9, 2007
+[7]                              < M A T L A B >
+[7]                  Copyright 1984-2007 The MathWorks, Inc.
+[7]                         Version 7.5.0.338 (R2007b)
+[7]                               August 9, 2007
+[4]                              < M A T L A B >
+[4]                  Copyright 1984-2007 The MathWorks, Inc.
+[4]                         Version 7.5.0.338 (R2007b)
+[4]                               August 9, 2007
+[14]                              < M A T L A B >
+[14]                  Copyright 1984-2007 The MathWorks, Inc.
+[14]                         Version 7.5.0.338 (R2007b)
+[14]                               August 9, 2007
+[13]                              < M A T L A B >
+[13]                  Copyright 1984-2007 The MathWorks, Inc.
+[13]                         Version 7.5.0.338 (R2007b)
+[13]                               August 9, 2007
+[12]                              < M A T L A B >
+[12]                  Copyright 1984-2007 The MathWorks, Inc.
+[12]                         Version 7.5.0.338 (R2007b)
+[12]                               August 9, 2007
+[1]                              < M A T L A B >
+[1]                  Copyright 1984-2007 The MathWorks, Inc.
+[1]                         Version 7.5.0.338 (R2007b)
+[1]                               August 9, 2007
+[3]                              < M A T L A B >
+[3]                  Copyright 1984-2007 The MathWorks, Inc.
+[3]                         Version 7.5.0.338 (R2007b)
+[3]                               August 9, 2007
+[2]                              < M A T L A B >
+[2]                  Copyright 1984-2007 The MathWorks, Inc.
+[2]                         Version 7.5.0.338 (R2007b)
+[2]                               August 9, 2007
+[10]                              < M A T L A B >
+[10]                  Copyright 1984-2007 The MathWorks, Inc.
+[10]                         Version 7.5.0.338 (R2007b)
+[10]                               August 9, 2007
+[5]                              < M A T L A B >
+[5]                  Copyright 1984-2007 The MathWorks, Inc.
+[5]                         Version 7.5.0.338 (R2007b)
+[5]                               August 9, 2007
+[0]                              < M A T L A B >
+[0]                  Copyright 1984-2007 The MathWorks, Inc.
+[0]                         Version 7.5.0.338 (R2007b)
+[0]                               August 9, 2007
+[15]                              < M A T L A B >
+[15]                  Copyright 1984-2007 The MathWorks, Inc.
+[15]                         Version 7.5.0.338 (R2007b)
+[15]                               August 9, 2007
+[9] 
+[9]  To get started, type one of these: helpwin, helpdesk, or demo.
+[9]  For product information, visit www.mathworks.com.
+[9] 
+[8] 
+[8]  To get started, type one of these: helpwin, helpdesk, or demo.
+[8]  For product information, visit www.mathworks.com.
+[8] 
+[11] 
+[11]  To get started, type one of these: helpwin, helpdesk, or demo.
+[11]  For product information, visit www.mathworks.com.
+[11] 
+[6] 
+[6]  To get started, type one of these: helpwin, helpdesk, or demo.
+[6]  For product information, visit www.mathworks.com.
+[6] 
+[4] 
+[4]  To get started, type one of these: helpwin, helpdesk, or demo.
+[4]  For product information, visit www.mathworks.com.
+[4] 
+[14] 
+[14]  To get started, type one of these: helpwin, helpdesk, or demo.
+[14]  For product information, visit www.mathworks.com.
+[14] 
+[7] 
+[7]  To get started, type one of these: helpwin, helpdesk, or demo.
+[7]  For product information, visit www.mathworks.com.
+[7] 
+[12] 
+[12]  To get started, type one of these: helpwin, helpdesk, or demo.
+[12]  For product information, visit www.mathworks.com.
+[12] 
+[1] 
+[1]  To get started, type one of these: helpwin, helpdesk, or demo.
+[1]  For product information, visit www.mathworks.com.
+[1] 
+[13] 
+[13]  To get started, type one of these: helpwin, helpdesk, or demo.
+[13]  For product information, visit www.mathworks.com.
+[13] 
+[3] 
+[3]  To get started, type one of these: helpwin, helpdesk, or demo.
+[3]  For product information, visit www.mathworks.com.
+[3] 
+[2] 
+[2]  To get started, type one of these: helpwin, helpdesk, or demo.
+[2]  For product information, visit www.mathworks.com.
+[2] 
+[10] 
+[10]  To get started, type one of these: helpwin, helpdesk, or demo.
+[10]  For product information, visit www.mathworks.com.
+[10] 
+[5] 
+[5]  To get started, type one of these: helpwin, helpdesk, or demo.
+[5]  For product information, visit www.mathworks.com.
+[5] 
+[0] 
+[0]  To get started, type one of these: helpwin, helpdesk, or demo.
+[0]  For product information, visit www.mathworks.com.
+[0] 
+[15] 
+[15]  To get started, type one of these: helpwin, helpdesk, or demo.
+[15]  For product information, visit www.mathworks.com.
+[15] 
+
+job aborted:
+rank: node: exit code[: error message]
+0: node67: -2
+1: node67: -2
+2: node67: -2
+3: node67: -2
+4: node30: -2
+5: node30: -2
+6: node30: -2
+7: node30: -2
+8: node36: -2
+9: node36: -2
+10: node36: -2
+11: node36: -2
+12: node27: -2
+13: node27: 1: process 13 exited without calling finalize
+14: node27: -2
+15: node27: 1: process 15 exited without calling finalize
+
+Stopping SMPD on  node67 node30 node36 node27 ...
+rsh node67 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -shutdown -phrase MATLAB -port 28598
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+rsh node30 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -shutdown -phrase MATLAB -port 28598
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+rsh node36 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -shutdown -phrase MATLAB -port 28598
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+rsh node27 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -shutdown -phrase MATLAB -port 28598
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+Exiting with code: 123

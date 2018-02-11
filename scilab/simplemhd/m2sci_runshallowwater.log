@@ -1,0 +1,18 @@
+   ****** Beginning of mfile2sci() session ******
+   File to convert: C:/Documents and Settings/cs1mkg/My Documents/proj/math/matl
+ ab/shallowwater/runshallowwater.m
+   Result file path: C:/Documents and Settings/cs1mkg/My Documents/proj/math/mat
+ lab/shallowwater/
+   Recursive mode: OFF
+   Only double values used in M-file: NO
+   Verbose mode: 1
+   Generate formated code: YES
+   M-file reading...
+   M-file reading: Done
+   Syntax modification...
+   Syntax modification: Done
+   Macro to tree conversion...
+   Conversion of M-tree...
+   Conversion of M-tree: Done
+   Macro to tree conversion: Done
+   ****** End of mfile2sci() session ******

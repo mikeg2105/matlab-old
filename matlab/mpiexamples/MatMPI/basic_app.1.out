@@ -1,0 +1,18 @@
+Warning: Unable to open display null, MATLAB is starting without a display.
+  You will not be able to display graphics on the screen.
+Warning: 
+  MATLAB is starting without a display, using internal event queue.
+  You will not be able to display graphics on the screen.
+
+
+                              < M A T L A B >
+                  Copyright 1984-2005 The MathWorks, Inc.
+                   Version 7.1.0.183 (R14) Service Pack 3
+                              August 02, 2005
+
+Warning: Duplicate directory name: /usr/local/packages/matlabr14sp3/toolbox/local.
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+>> >> >> >> 

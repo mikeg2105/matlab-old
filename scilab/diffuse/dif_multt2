@@ -1,0 +1,66 @@
+//multi species diffusion
+//reactive model allowing interaction of compounds
+
+exec('../xmlutils/writexml.m');
+exec('../xmlutils/writex3d.m');
+exec('diffuse_utils.m');
+exec('diffuse_x3d.m');
+exec('diffuse.m');
+exec('diffuse_multi.m');
+exec('diffuse_drv.m');
+chdir('results');
+
+//readinput(file)
+n1=25;
+n2=25;
+n3=1;
+
+h=0.05;
+nsteps=100;
+nsubsteps=10;
+deltat=0.01;
+concweight=10.0;
+sourceval=0.01;
+sinkval=0.01;
+nspecies=2;
+
+//inconsts
+//constants used to determine the reactivity the source function
+//the linear dependency on concentration
+inconsts(1,1)=0;
+inconsts(1,2)=200;
+inconsts(2,1)=400;
+inconsts(2,2)=0;
+
+
+//diffusion constants for each species
+diff(1)=0.15;
+  diff(2)=0.3;
+
+  in(1)=n1   //n1
+  in(2)=n2    //n2
+  in(3)=n3  //n3
+  in(4)=h    //h
+  in(5)=nspecies;
+  
+  
+  
+  //For each species
+  //create
+  //1. Initial concentration
+  //2. Sources
+  //3. Sinkss
+  //4. species
+  //concsin=rand(n1,n2,n3);
+  concsin=zeros(n1,n2,n3,nspecies);
+  concsin(10,10,1,1)=50;
+  concsin(15,15,1,2)=50;
+  sources=zeros(n1,n2,n3,nspecies);
+  //sources(n1/2,n2/2,1)=rand();
+  //sources(1,1,1)=sourceval;
+  sinks=zeros(n1,n2,n3,nspecies);
+  //sinks(n1,n2,n3)=sinkval;
+  //read initial configuration from an old one
+	sirout=mymultidiffuse(nsteps,nsubsteps,deltat, diff, in,concsin,sources,sinks, inconsts);
+
+exit();

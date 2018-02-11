@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "http://www.web3d.org/specifications/x3d-3.0.dtd" "file:///www.web3d.org/TaskGroups/x3d/translation/x3d-3.0.dtd">
+<X3D>
+<head>
+<meta content="diffuse_1.x3d" name="filename">
+</meta>
+<meta content="Simple X3D example" name="description">
+</meta>
+<meta content="30 October 2000" name="created">
+</meta>
+<meta content="6 March 2003" name="revised">
+</meta>
+<meta content="Mike Griffiths" name="author">
+</meta>
+<meta content="http://www.shef.ac.uk/personal/m/mikeg/x3d/diffuse_out.x3d" name="url">
+</meta>
+</head>
+<Scene>
+<Group>
+<Viewpoint description="diffuse" orientation="0.000000 1.000000 0.000000 1.570000" position="6.000000 -1.000000 0.000000">
+</Viewpoint>
+<NavigationInfo type="&quot;EXAMINE&quot; &quot;ANY&quot;">
+</NavigationInfo>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="4.000000 4.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.181489">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="4.000000 8.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="1.247275 0.000000 0.000000">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="4.000000 12.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.181555">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="4.000000 16.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.004516">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="8.000000 4.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="1.247275 0.000000 0.000000">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="8.000000 8.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="50.342452 0.000000 0.000000">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="8.000000 12.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="1.248782 0.000000 0.000000">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="8.000000 16.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.090859">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="12.000000 4.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.181555">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="12.000000 8.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="1.248782 0.000000 0.000000">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="12.000000 12.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.181620">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="12.000000 16.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.004517">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="16.000000 4.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.004516">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="16.000000 8.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.090859">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="16.000000 12.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.004517">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+<Transform rotation="1.000000 0.000000 0.000000 2.094395" translation="16.000000 16.000000 4.000000">
+<Shape>
+<Appearance>
+<Material diffuseColor="0.000000 0.000000 0.000098">
+</Material>
+</Appearance>
+<Cone>
+</Cone>
+</Shape>
+</Transform>
+</Group>
+</Scene>
+</X3D>

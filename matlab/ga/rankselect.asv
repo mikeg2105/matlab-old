@@ -1,0 +1,32 @@
+function Xsel=rankselect(X)    % ranking selection
+Xsel=X;
+[Npop,n]=size(X);n=n-1;
+[Fsort,ind]=sort(X(:,n+1));
+X=X(ind,:);
+p=1:Npop;roulette=cumsum(p)/sum(p);
+for i=1:Npop;
+  do
+    u=rand();
+  while
+      
+  index=find(roulette<u);Nselect=max(index);
+  display(max(index))
+  display(index)
+  Xsel(i,:)=X(Nselect,:);
+end
+%endfunction
+%
+
+
+
+
+
+
+
+
+
+
+ 
+     
+
+

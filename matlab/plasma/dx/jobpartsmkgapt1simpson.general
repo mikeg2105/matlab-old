@@ -1,0 +1,12 @@
+file=out/jobmkgapt1simpson.out
+points= 100
+series= 200
+format = ascii 
+ interleaving = field 
+ header = lines 7 
+field = locations,v 
+ structure = 3-vector, 3-vector 
+ type = float, float  
+ dependency = positions, positions  
+ end 
+ 

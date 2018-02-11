@@ -1,0 +1,11 @@
+universe = vanilla
+environment = path=c:\windows\system32;c:\Program Files\scilab-3.0\bin
+executable = scijob.bat
+arguments = diffuse_run$(Process)
+transfer_input_files = scijob.bat, writexml.m, writex3d.m, diffuse_utils.m, diffuse_x3d.m, diffuse.m, diffuse_drv.m, diffuse_run$(Process) 
+WhenToTransferOutput= ON_EXIT_OR_EVICT
+output = scijob$(Process).out
+error = scijob$(Process).err
+log = scijob$(Process).log
+InitialDir = test$(Process)
+queue 2 

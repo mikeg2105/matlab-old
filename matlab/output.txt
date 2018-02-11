@@ -1,0 +1,48 @@
+Warning: 
+  MATLAB is starting without a display, using internal event queue.
+  You will not be able to display graphics on the screen.
+
+
+                              < M A T L A B >
+                  Copyright 1984-2005 The MathWorks, Inc.
+                   Version 7.1.0.183 (R14) Service Pack 3
+                              August 02, 2005
+
+    ----------------------------------------------------------
+        Your MATLAB license will expire in 19 days.
+        Please contact your system administrator or
+        The MathWorks to renew this license.
+    ----------------------------------------------------------
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+-------------------------------------------------------------------------------------
+MATLAB Version 7.1.0.183 (R14) Service Pack 3
+MATLAB License Number: unknown
+Operating System: Linux 2.6.9-22.0.1.ELsmp #1 SMP Thu Oct 27 11:42:46 CDT 2005 x86_64
+Java VM Version: Java 1.4.2 with Blackdown Java-Linux Team Java HotSpot(TM) 64-Bit Server VM mixed mode
+-------------------------------------------------------------------------------------
+MATLAB                                                Version 7.1        (R14SP3)
+Simulink                                              Version 6.3        (R14SP3)
+Communications Toolbox                                Version 3.2        (R14SP3)
+Control System Toolbox                                Version 6.2.1      (R14SP3)
+Distributed Computing Toolbox                         Version 1.0.2      (R14SP3)
+Fuzzy Logic Toolbox                                   Version 2.2.2      (R14SP3)
+Image Processing Toolbox                              Version 5.1        (R14SP3)
+Instrument Control Toolbox                            Version 2.3        (R14SP3)
+MATLAB Compiler                                       Version 4.3        (R14SP3)
+MATLAB Distributed Computing Engine                   Version 1.0.2      (R14SP3)
+Mapping Toolbox                                       Version 2.2        (R14SP3)
+Neural Network Toolbox                                Version 4.0.6      (R14SP3)
+Optimization Toolbox                                  Version 3.0.3      (R14SP3)
+Partial Differential Equation Toolbox                 Version 1.0.7      (R14SP3)
+Robust Control Toolbox                                Version 3.0.2      (R14SP3)
+Signal Processing Toolbox                             Version 6.4        (R14SP3)
+SimPowerSystems                                       Version 4.1.1      (R14SP3)
+Simulink Control Design                               Version 1.3        (R14SP3)
+Statistics Toolbox                                    Version 5.1        (R14SP3)
+Symbolic Math Toolbox                                 Version 3.1.3      (R14SP3)
+System Identification Toolbox                         Version 6.1.2      (R14SP3)
+Wavelet Toolbox                                       Version 3.0.3      (R14SP3)
+>> 

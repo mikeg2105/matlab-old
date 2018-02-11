@@ -1,0 +1,12 @@
+file=out/jobformmkgt14.out
+grid=1
+format = ascii 
+ interleaving = record 
+ majority = row 
+field = nr ,ntheta, nphi 
+ structure = scalar, scalar, scalar 
+ type = int, int, int  
+ dependency = positions, positions,positions  
+ positions = regular, 0, 1 
+ end 
+ 

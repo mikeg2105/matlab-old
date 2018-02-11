@@ -1,0 +1,223 @@
+
+%   This script will test that the basic functionality of the Geodise
+%   Compute Toolbox is working. 
+
+% Copyright 2004 Geodise Project, University of Southampton
+% Graeme Pound $Date: 2005/01/06 12:16:56 $
+% $Revision: 1.3 $
+% Geodise computational toolbox for Matlab
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Print the introduction 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clc
+
+disp ('  Geodise Compute Toolkit test script.') 
+disp (' ')
+disp ('  This test script will:')
+disp ('  (1) Query user credentials and create a proxy certificate')
+disp ('  (2) Create a remote directory and transfer a script to that directory')
+disp ('  (3) Alter the file permissions of the script and execute it')
+disp ('  (4) Retrieve the output of the job')
+disp ('  (5) Remove the remote files and directories')
+disp ('  (6) Delete the proxy certificate')
+disp (' ')
+disp ('  Press any key to continue')
+
+pause
+disp (' ')
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Set up the demo variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Globus server upon which to run the shell script. Note that the
+% certificate subject line (returned by gd_certinfo) must map to a user
+% account on the Globus server.
+GLOBUSSERVER = 'iceberg1.shef.ac.uk';
+GLOBUSSERVERJOBMAN = 'iceberg1.shef.ac.uk/jobmanager-sge';
+%disp('  Enter the name of the Globus GT2 server that you wish to use?')
+%disp('    Note that you must have authorisation to access the GRAM')
+%disp('    and GridFTP services on this server.')
+%servername = input('input>> ','s');
+%if ~isempty(servername)
+%    GLOBUSSERVER = servername
+%else
+%    GLOBUSSERVER
+%end 
+
+% The name of the directory on the Globus server
+DIRNAME = 'mdemo/';
+% Locate the directory containing the shell script
+SCRIPTDIR = [fileparts(mfilename('fullpath')), filesep];
+
+disp (' ')
+disp ('  Press any key to continue')
+pause
+disp (' ')
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create a proxy certificate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+disp ('  (1) Query user credentials and create a proxy certificate')
+
+disp(' ')
+%Query the user's certificate
+disp ('  (1.1) Print information about the user''s certificate')
+disp (' ')
+disp ('>> subject = gd_certinfo ')
+subject = gd_certinfo
+
+% Create a Globus proxy certificate for GSI authentication
+disp ('  (1.2) Create a Globus proxy certificate for GSI authentication')
+disp (' ')
+disp ('>> gd_createproxy')
+%gd_createproxy
+disp (' ')
+
+% Return information about the proxy certificate
+disp ('  (1.3) Print information about the proxy certificate')
+disp (' ')
+disp ('>> gd_proxyinfo; ')
+gd_proxyinfo;
+
+disp (' ')
+disp ('  Press any key to continue')
+pause
+disp (' ')
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Put the remote files
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+disp ('  (2) Create a remote directory and transfer a script to that directory')
+
+disp(' ')
+disp (['  (2.1) Create a remote directory "', DIRNAME,'"'])
+disp(['>> gd_makedir(''',GLOBUSSERVER,''' ,''', DIRNAME, ''')'])
+gd_makedir(GLOBUSSERVER, DIRNAME)
+
+disp(' ')
+disp (['  (2.2) Printing the shell script "matlabDemo.sh" '])
+disp('>> type matlabDemo.sh')
+type matlabDemo.sh
+
+% GridFTP the demo shell script from the local directory to the users home
+% directory on GLOBUSSERVER 
+disp(' ')
+disp('  (2.3) Transfering matlabDemo.sh to Globus server using GridFTP')
+disp(['>> gd_putfile(''',GLOBUSSERVER,''' ,''',SCRIPTDIR,'matlabDemo.sh',''' ,''',DIRNAME,'matlabDemo.sh',''')'])
+gd_putfile(GLOBUSSERVER,[SCRIPTDIR,'matlabDemo.sh'],[DIRNAME,'matlabDemo.sh'])
+
+disp (' ')
+disp ('  Press any key to continue')
+pause
+disp (' ')
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Run the demonstration script
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+disp ('  (3) Alter the file permissions of the script and execute it')
+
+disp(' ')
+disp (['  (3.1) Modify the permissions on the shell script'])
+% Modify the permissions on the shell script, currently there is no API to
+% perform chmod in the file transfer so this is a work around.
+disp('>> jobhandle = gd_jobsubmit([''&(executable=/bin/chmod) (arguments = 700 '',DIRNAME,''matlabDemo.sh)''],GLOBUSSERVER);')
+jobhandle = gd_jobsubmit(['&(executable=/bin/chmod) (arguments = 700 ',DIRNAME,'matlabDemo.sh)'],GLOBUSSERVER);
+gd_jobpoll(jobhandle);
+
+
+disp(' ')
+disp (['  (3.2) Execute the shell script'])
+% The RSL string describes the GRAM job to be submitted to GLOBUSSERVER, the
+% stdout and stderr are redirected to file. Note that GRAM will append
+% existing files of the same name with output
+RSLstring = ['&(executable=',DIRNAME,'matlabDemo.sh)(stdout=',DIRNAME,'stdout.out)(stderr=',DIRNAME,'stderr.out)'];
+disp(['>> RSL = ', RSLstring,';'])
+% Submit the job to the GRAM gatekeeper on GLOBUSSERVER
+disp(['>> jobHandle = gd_jobsubmit(RSL, ' ,GLOBUSSERVER, ')'])
+jobhandle = gd_jobsubmit(RSLstring,GLOBUSSERVERJOBMAN)
+
+% Terminate the GRAM job
+%gd_jobkill(jobHandle)
+
+disp(' ')
+disp('  (3.3) Polling jobhandle until completion (or up to 1min)')
+disp('>> gd_jobpoll(jobhandle, 5, 60);')
+% Poll the GRAM job every 5 seconds for a maximum of one minute
+gd_jobpoll(jobhandle, 5, 60);
+
+disp (' ')
+disp ('  Press any key to continue')
+pause
+disp (' ')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Get the output files
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+disp ('  (4) Retrieve the output of the job')
+disp(' ')
+disp('  (4.1) Retrieving output from the Globus server using GridFTP')
+% Retrieve the files
+disp('>> gd_getfile(GLOBUSSERVER,[DIRNAME,''stdout.out''],[pwd,''/stdout.out''])')
+gd_getfile(GLOBUSSERVER,[DIRNAME,'stdout.out'],[pwd,'/stdout.out'])
+disp('>> gd_getfile(GLOBUSSERVER,[DIRNAME,''stderr.out''],[pwd,''/stderr.out''])')
+gd_getfile(GLOBUSSERVER,[DIRNAME,'stderr.out'],[pwd,'/stderr.out'])
+
+
+disp(' ')
+disp('  (4.2) Display the output of the job')  
+% Display the output
+disp('>> type([pwd,''/stdout.out''])')
+type([pwd,'/stdout.out'])
+disp('>> type([pwd,''/stderr.out''])')
+type([pwd,'/stderr.out'])
+
+disp(' ')
+disp('  (4.3) Delete the local files')  
+% Delete local files
+disp('>> delete([pwd,''/stdout.out''])')
+delete([pwd,'/stdout.out'])
+disp('>> delete([pwd,''/stdout.out''])')
+delete([pwd,'/stderr.out'])
+
+disp (' ')
+disp ('  Press any key to continue')
+pause
+disp (' ')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Delete the remote files 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+disp ('  (5) Remove the remote files and directories')
+
+disp (' ')
+% Delete remote files
+disp ('  (5.1) Delete the remote files using GridFTP')
+disp('>> gd_rmfile(GLOBUSSERVER,[DIRNAME,''stdout.out''])')
+gd_rmfile(GLOBUSSERVER,[DIRNAME,'stdout.out'])
+disp('>> gd_rmfile(GLOBUSSERVER,[DIRNAME,''stderr.out''])')
+gd_rmfile(GLOBUSSERVER,[DIRNAME,'stderr.out'])
+disp('>> gd_rmfile(GLOBUSSERVER,[DIRNAME,''matlabDemo.sh''])')
+gd_rmfile(GLOBUSSERVER,[DIRNAME,'matlabDemo.sh'])
+
+
+disp (' ')
+disp ('  (5.1) Delete the remote directory using GridFTP')
+% Delete remote directory
+disp('>> gd_rmdir(GLOBUSSERVER, DIRNAME)')
+gd_rmdir(GLOBUSSERVER, DIRNAME)
+
+disp (' ')
+disp ('  Press any key to continue')
+pause
+disp (' ')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Destroy the proxy certificate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+disp ('  (6) Delete the proxy certificate')
+disp (' ')
+disp('>> gd_destroyproxy')
+%gd_destroyproxy;
+
+disp (' ')
+disp ('  Script complete')

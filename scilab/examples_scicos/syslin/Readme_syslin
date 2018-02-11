@@ -1,0 +1,10 @@
+This demo runs in Scilab. It consists of
+a Scilab script performing a Scicos
+simulation. The data exchange between 
+Scilab and Scicos is done via files.
+To run it:
+
+exec syslinsimexe.sci
+
+Note that this demo generates two files:
+foo and goo.

@@ -1,0 +1,40 @@
+Warning: 
+  MATLAB is starting without a display, using internal event queue.
+  You will not be able to display graphics on the screen.
+
+
+                              < M A T L A B >
+                  Copyright 1984-2005 The MathWorks, Inc.
+                   Version 7.1.0.183 (R14) Service Pack 3
+                              August 02, 2005
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+>> >> No pid files found
+>> >> >> >> Nothing to delete.
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> Launching MPI rank: 3 on: comp46
+Launching MPI rank: 2 on: comp46
+Launching MPI rank: 1 on: comp41
+Launching MPI rank: 0 on: comp41
+
+unix_launch =
+
+ rsh comp46 -n 'cd /home1/cs/cs1mkg/proj/math/matlab/mpiexamples; /bin/sh ./MatMPI/Unix_Commands.comp46.2.sh &' &
+/bin/sh ./MatMPI/Unix_Commands.comp41.0.sh &
+
+
+my_rank: 0
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp46 cd /home1/cs/cs1mkg/proj/math/matlab/mpiexamples; /bin/sh ./MatMPI/Unix_Commands.comp46.2.sh &
+error: executing task of job 648525 failed: 
+Error in ==> MatMPI_Sleep at 3
+    pause(0.01);
+
+Error in ==> MPI_Bcast at 110
+            MatMPI_Sleep;
+
+Error in ==> basic_app at 69
+  MPI_Bcast( leader, coefs_tag, comm, coefs );
+
+>> >> >> >> >> >> >> >> 

@@ -1,0 +1,12 @@
+file=out/jobformmkgapt1simpson.out
+grid=1
+format = ascii 
+ interleaving = record 
+ majority = row 
+field = nr ,ntheta 
+ structure = scalar, scalar 
+ type = int, int 
+ dependency = positions, positions 
+ positions = regular, 0, 1 
+ end 
+ 

@@ -1,0 +1,140 @@
+Starting SMPD on comp53
+comp40 ...
+rsh comp53 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -s -phrase MATLAB -port 27560
+rsh comp40 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -s -phrase MATLAB -port 27560
+All SMPDs launched
+"/usr/local/packages/matlab_mdcdem_r06b/bin/mw_mpiexec" -phrase MATLAB -port 27560 -l -n 2 -machinefile /tmp/1257560.1.parmatlab.q/machines -genvlist MDCE_DECODE_FUNCTION,MDCE_STORAGE_LOCATION,MDCE_STORAGE_CONSTRUCTOR,MDCE_JOB_LOCATION "/usr/local/packages/matlab_mdcdem_r06b/bin/worker" -parallel
+[0]                              < M A T L A B >
+[0]                  Copyright 1984-2006 The MathWorks, Inc.
+[0]                         Version 7.3.0.298 (R2006b)
+[0]                              August 03, 2006
+[0] 
+[0]  To get started, type one of these: helpwin, helpdesk, or demo.
+[0]  For product information, visit www.mathworks.com.
+[0] 
+[1]                              < M A T L A B >
+[1]                  Copyright 1984-2006 The MathWorks, Inc.
+[1]                         Version 7.3.0.298 (R2006b)
+[1]                              August 03, 2006
+[1] 
+[1]  To get started, type one of these: helpwin, helpdesk, or demo.
+[1]  For product information, visit www.mathworks.com.
+[1] 
+
+Stopping SMPD on  comp53 comp40 ...
+rsh comp53 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -shutdown -phrase MATLAB -port 27560
+rsh comp40 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -shutdown -phrase MATLAB -port 27560
+Exiting with code: 0
+Starting SMPD on comp53
+comp40 ...
+rsh comp53 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -s -phrase MATLAB -port 27689
+rsh comp40 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -s -phrase MATLAB -port 27689
+All SMPDs launched
+"/usr/local/packages/matlab_mdcdem_r06b/bin/mw_mpiexec" -phrase MATLAB -port 27689 -l -n 2 -machinefile /tmp/1257689.1.parmatlab.q/machines -genvlist MDCE_DECODE_FUNCTION,MDCE_STORAGE_LOCATION,MDCE_STORAGE_CONSTRUCTOR,MDCE_JOB_LOCATION "/usr/local/packages/matlab_mdcdem_r06b/bin/worker" -parallel
+[0]                              < M A T L A B >
+[0]                  Copyright 1984-2006 The MathWorks, Inc.
+[0]                         Version 7.3.0.298 (R2006b)
+[0]                              August 03, 2006
+[0] 
+[0]  To get started, type one of these: helpwin, helpdesk, or demo.
+[0]  For product information, visit www.mathworks.com.
+[0] 
+[1]                              < M A T L A B >
+[1]                  Copyright 1984-2006 The MathWorks, Inc.
+[1]                         Version 7.3.0.298 (R2006b)
+[1]                              August 03, 2006
+[1] 
+[1]  To get started, type one of these: helpwin, helpdesk, or demo.
+[1]  For product information, visit www.mathworks.com.
+[1] 
+
+Stopping SMPD on  comp53 comp40 ...
+rsh comp53 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -shutdown -phrase MATLAB -port 27689
+rsh comp40 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -shutdown -phrase MATLAB -port 27689
+Exiting with code: 0
+Starting SMPD on comp40
+comp53 ...
+rsh comp40 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -s -phrase MATLAB -port 27974
+rsh comp53 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -s -phrase MATLAB -port 27974
+All SMPDs launched
+"/usr/local/packages/matlab_mdcdem_r06b/bin/mw_mpiexec" -phrase MATLAB -port 27974 -l -n 8 -machinefile /tmp/1287974.1.parmatlab.q/machines -genvlist MDCE_DECODE_FUNCTION,MDCE_STORAGE_LOCATION,MDCE_STORAGE_CONSTRUCTOR,MDCE_JOB_LOCATION "/usr/local/packages/matlab_mdcdem_r06b/bin/worker" -parallel
+[1]                              < M A T L A B >
+[1]                  Copyright 1984-2006 The MathWorks, Inc.
+[1]                         Version 7.3.0.298 (R2006b)
+[1]                              August 03, 2006
+[0]                              < M A T L A B >
+[0]                  Copyright 1984-2006 The MathWorks, Inc.
+[0]                         Version 7.3.0.298 (R2006b)
+[0]                              August 03, 2006
+[7]                              < M A T L A B >
+[7]                  Copyright 1984-2006 The MathWorks, Inc.
+[7]                         Version 7.3.0.298 (R2006b)
+[7]                              August 03, 2006
+[2]                              < M A T L A B >
+[2]                  Copyright 1984-2006 The MathWorks, Inc.
+[2]                         Version 7.3.0.298 (R2006b)
+[2]                              August 03, 2006
+[5]                              < M A T L A B >
+[5]                  Copyright 1984-2006 The MathWorks, Inc.
+[5]                         Version 7.3.0.298 (R2006b)
+[5]                              August 03, 2006
+[6]                              < M A T L A B >
+[6]                  Copyright 1984-2006 The MathWorks, Inc.
+[6]                         Version 7.3.0.298 (R2006b)
+[6]                              August 03, 2006
+[1] 
+[1]  To get started, type one of these: helpwin, helpdesk, or demo.
+[1]  For product information, visit www.mathworks.com.
+[1] 
+[7] 
+[7]  To get started, type one of these: helpwin, helpdesk, or demo.
+[7]  For product information, visit www.mathworks.com.
+[7] 
+[0] 
+[0]  To get started, type one of these: helpwin, helpdesk, or demo.
+[0]  For product information, visit www.mathworks.com.
+[0] 
+[2] 
+[2]  To get started, type one of these: helpwin, helpdesk, or demo.
+[2]  For product information, visit www.mathworks.com.
+[2] 
+[5] 
+[5]  To get started, type one of these: helpwin, helpdesk, or demo.
+[5]  For product information, visit www.mathworks.com.
+[5] 
+[6] 
+[6]  To get started, type one of these: helpwin, helpdesk, or demo.
+[6]  For product information, visit www.mathworks.com.
+[6] 
+[4]                              < M A T L A B >
+[4]                  Copyright 1984-2006 The MathWorks, Inc.
+[4]                         Version 7.3.0.298 (R2006b)
+[4]                              August 03, 2006
+[3]                              < M A T L A B >
+[3]                  Copyright 1984-2006 The MathWorks, Inc.
+[3]                         Version 7.3.0.298 (R2006b)
+[3]                              August 03, 2006
+[4] 
+[4]  To get started, type one of these: helpwin, helpdesk, or demo.
+[4]  For product information, visit www.mathworks.com.
+[4] 
+[3] 
+[3]  To get started, type one of these: helpwin, helpdesk, or demo.
+[3]  For product information, visit www.mathworks.com.
+[3] 
+
+job aborted:
+rank: node: exit code[: error message]
+0: comp40: -2
+1: comp40: -2
+2: comp40: -2: application called MPI_Abort(MPI_COMM_WORLD, 42) - process 2
+3: comp40: -2
+4: comp53: -2
+5: comp53: -2
+6: comp53: -2
+7: comp53: -2
+
+Stopping SMPD on  comp40 comp53 ...
+rsh comp40 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -shutdown -phrase MATLAB -port 27974
+rsh comp53 "/usr/local/packages/matlab_mdcdem_r06b/bin/mw_smpd" -shutdown -phrase MATLAB -port 27974
+Exiting with code: 42

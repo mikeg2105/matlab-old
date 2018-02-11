@@ -1,0 +1,18 @@
+universe = vanilla
+owner =mike
+environment = path=c:\windows\system32;c:\Program Files\scilab-4.0\bin
+executable = scijob.bat
+arguments = test1_$(Process).sce
+transfer_input_files = scijob.bat, test1_$(Process).sce, h3_dx.sce, initial.sce, analywave.sce,
+spheretocart.sce, invert.sce, centralderiv.sce, curelation.sce, method.sce,
+sources.sce, fluxes.sce, boundaries.sce, onebound.sce
+WhenToTransferOutput= ON_EXIT_OR_EVICT
+transfer_output_files = test1_$(Process).form, test1_$(Process)_gxx.dat, test1_$(Process)_gxy.dat, test1_$(Process)_gxz.dat,
+test1_$(Process)_gyy.dat, test1_$(Process)_gyz.dat, test1_$(Process)_gzz.dat, test1_$(Process)_qxx.dat, test1_$(Process)_qxy.dat,
+test1_$(Process)_qxz.dat,
+test1_$(Process)_qyy.dat, test1_$(Process)_qyz.dat, test1_$(Process)_qzz.dat,
+test1_$(Process)_initial.mat, test1_$(Process)_1.mat, test1_$(Process)_20.mat    
+output = test1_$(Process).out
+error = test1_$(Process).err
+log = test1_$(Process).log
+queue

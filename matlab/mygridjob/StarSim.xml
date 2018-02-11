@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+	<iosim filename="StarSim1.xml">
+		<simulation class="StarXMLSimulation" createmethod="1" name="StarSim1" simulantclass="StarModel" simulanttype="0"><props flag="5" name="StarSimProps" numprops="1">
+	<prop flag="1" index="0" name="NumEquilibrationSteps"><int>5000</int></prop></props>
+	<steps configstepfreq="100" statestepfreq="1">1000</steps>
+	<fileprops configfilename="startestcfg1" configreadmethod="1" configwritemethod="1" simreadmethod="1" simwritemethod="1" statefilename="starteststate" statereadmethod="1" statewritemethod="1"/>
+	<model class="StarModel" createmethod="1" index="0" name="StarModelDefault"><props flag="7" name="StarModelProps" numprops="20"><prop flag="1" index="0" name="BoundingBoxMax"><vec size="3">5000 5000 5000 </vec></prop>
+	<prop flag="1" index="1" name="BoundingBoxMin"><vec size="3">-5000 -5000 -5000 </vec></prop>
+	<prop flag="1" index="2" name="NumStarsInGroup"><vec size="2">2000</vec></prop>
+	<prop flag="1" index="7" name="ClusterInitial Radius">
+		<mat cols="3" rows="2">25 30 0 </mat></prop>
+		<prop flag="1" index="8" name="ClusterInitial Position">
+			<mat cols="3" rows="2">0.0 0.0 0.0</mat></prop>
+			<prop flag="1" index="9" name="ClusterInitial Velocity">
+				<mat cols="3" rows="2">0.0 0.0 0.0</mat>
+			</prop>
+			<prop flag="1" index="10" name="TimeStep"><float>0.020000</float></prop>
+			<prop flag="1" index="11" name="Black hole size">
+				<vec size="2">0.2 </vec></prop>
+				<prop flag="1" index="12" name="Black hole mass">
+					<vec size="2">20 </vec></prop>
+					<prop flag="1" index="13" name="Star size">
+						<vec size="2">0.1 </vec></prop>
+						<prop flag="1" index="14" name="Star mass">
+							<vec size="2">0.01 </vec></prop>
+							<prop flag="1" index="17" name="AttractiveForceConstant"><float>1.000000</float></prop>
+							<prop flag="1" index="18" name="RepulsiveForceConstant"><float>0.000000</float></prop>
+							<prop flag="1" index="19" name="InteractionSwitch"><int>0</int></prop>
+	</props></model></simulation></iosim>

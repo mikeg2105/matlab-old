@@ -1,0 +1,8 @@
+field = locations, field0, field1
+structure = 2-vector, 2-vector, scalar
+type = float, float, float
+dependency = positions, positions, positions
+positions = regular, regular, regular, 0, 1, 0, 1, 0, 1
+
+end
+

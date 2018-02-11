@@ -1,0 +1,10 @@
+-catch_rsh /usr/local/sge6.0/default/spool/comp42/active_jobs/1108955.1/pe_hostfile comp42.iceberg.shef.ac.uk /usr/local/packages/pvm3
+-catch_rsh /usr/local/sge6.0/default/spool/comp42/active_jobs/1108955.1/pe_hostfile comp42.iceberg.shef.ac.uk
+-catch_rsh /usr/local/sge6.0/default/spool/comp57/active_jobs/1108955.1/pe_hostfile comp57.iceberg.shef.ac.uk /usr/local/packages/pvm3
+-catch_rsh /usr/local/sge6.0/default/spool/comp57/active_jobs/1108955.1/pe_hostfile comp57.iceberg.shef.ac.uk
+-catch_rsh /usr/local/sge6.0/default/spool/comp55/active_jobs/1108955.1/pe_hostfile comp55.iceberg.shef.ac.uk /usr/local/packages/pvm3
+-catch_rsh /usr/local/sge6.0/default/spool/comp55/active_jobs/1108955.1/pe_hostfile comp55.iceberg.shef.ac.uk
+-catch_rsh /usr/local/sge6.0/default/spool/comp50/active_jobs/1108955.1/pe_hostfile comp50.iceberg.shef.ac.uk /usr/local/packages/pvm3
+-catch_rsh /usr/local/sge6.0/default/spool/comp50/active_jobs/1108955.1/pe_hostfile comp50.iceberg.shef.ac.uk
+-catch_rsh /usr/local/sge6.0/default/spool/comp44/active_jobs/1108955.1/pe_hostfile comp44.iceberg.shef.ac.uk /usr/local/packages/pvm3
+-catch_rsh /usr/local/sge6.0/default/spool/comp44/active_jobs/1108955.1/pe_hostfile comp44.iceberg.shef.ac.uk

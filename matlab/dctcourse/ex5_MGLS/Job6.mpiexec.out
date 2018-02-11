@@ -1,0 +1,90 @@
+Starting SMPD on node16
+node28 ...
+rsh node16 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -s -phrase MATLAB -port 28599
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+rsh node28 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -s -phrase MATLAB -port 28599
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+All SMPDs launched
+"/usr/local/packages5/matlab_r2007b/bin/mw_mpiexec" -phrase MATLAB -port 28599 -l -n 8 -machinefile /tmp/1558599.1.parallelx22.q/machines -genvlist MDCE_DECODE_FUNCTION,MDCE_STORAGE_LOCATION,MDCE_STORAGE_CONSTRUCTOR,MDCE_JOB_LOCATION "/usr/local/packages5/matlab_r2007b/bin/worker" -parallel
+[4]                              < M A T L A B >
+[4]                  Copyright 1984-2007 The MathWorks, Inc.
+[4]                         Version 7.5.0.338 (R2007b)
+[4]                               August 9, 2007
+[5]                              < M A T L A B >
+[5]                  Copyright 1984-2007 The MathWorks, Inc.
+[5]                         Version 7.5.0.338 (R2007b)
+[5]                               August 9, 2007
+[6]                              < M A T L A B >
+[6]                  Copyright 1984-2007 The MathWorks, Inc.
+[6]                         Version 7.5.0.338 (R2007b)
+[6]                               August 9, 2007
+[0]                              < M A T L A B >
+[0]                  Copyright 1984-2007 The MathWorks, Inc.
+[0]                         Version 7.5.0.338 (R2007b)
+[0]                               August 9, 2007
+[7]                              < M A T L A B >
+[7]                  Copyright 1984-2007 The MathWorks, Inc.
+[7]                         Version 7.5.0.338 (R2007b)
+[7]                               August 9, 2007
+[3]                              < M A T L A B >
+[3]                  Copyright 1984-2007 The MathWorks, Inc.
+[3]                         Version 7.5.0.338 (R2007b)
+[3]                               August 9, 2007
+[2]                              < M A T L A B >
+[2]                  Copyright 1984-2007 The MathWorks, Inc.
+[2]                         Version 7.5.0.338 (R2007b)
+[2]                               August 9, 2007
+[1]                              < M A T L A B >
+[1]                  Copyright 1984-2007 The MathWorks, Inc.
+[1]                         Version 7.5.0.338 (R2007b)
+[1]                               August 9, 2007
+[6] 
+[6]  To get started, type one of these: helpwin, helpdesk, or demo.
+[6]  For product information, visit www.mathworks.com.
+[6] 
+[5] 
+[5]  To get started, type one of these: helpwin, helpdesk, or demo.
+[5]  For product information, visit www.mathworks.com.
+[5] 
+[0] 
+[0]  To get started, type one of these: helpwin, helpdesk, or demo.
+[0]  For product information, visit www.mathworks.com.
+[0] 
+[4] 
+[4]  To get started, type one of these: helpwin, helpdesk, or demo.
+[4]  For product information, visit www.mathworks.com.
+[4] 
+[7] 
+[7]  To get started, type one of these: helpwin, helpdesk, or demo.
+[7]  For product information, visit www.mathworks.com.
+[7] 
+[3] 
+[3]  To get started, type one of these: helpwin, helpdesk, or demo.
+[3]  For product information, visit www.mathworks.com.
+[3] 
+[2] 
+[2]  To get started, type one of these: helpwin, helpdesk, or demo.
+[2]  For product information, visit www.mathworks.com.
+[2] 
+[1] 
+[1]  To get started, type one of these: helpwin, helpdesk, or demo.
+[1]  For product information, visit www.mathworks.com.
+[1] 
+
+job aborted:
+rank: node: exit code[: error message]
+0: node16: -2
+1: node16: -2
+2: node16: -2
+3: node16: -2
+4: node28: -2
+5: node28: -2
+6: node28: -2
+7: node28: -2: application called MPI_Abort(MPI_COMM_WORLD, 42) - process 7
+
+Stopping SMPD on  node16 node28 ...
+rsh node16 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -shutdown -phrase MATLAB -port 28599
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+rsh node28 "/usr/local/packages5/matlab_r2007b/bin/mw_smpd" -shutdown -phrase MATLAB -port 28599
+/etc/profile.d/compilers.sh: line 4: getarch: command not found
+Exiting with code: 42

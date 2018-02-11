@@ -1,0 +1,13 @@
+file = /home/cs1mkg/proj/math/scilab/shallowwater/out/job.out
+grid = 51 x 51
+format = ascii
+interleaving = record-vector
+majority = row
+header = lines 1
+series = 24, 1, 1
+field = locations, field0, field1
+structure = 2-vector, 2-vector, scalar
+type = float, float, float
+dependency = positions, positions, positions
+
+end

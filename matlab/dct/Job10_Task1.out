@@ -1,0 +1,16 @@
+Executing: 
+which: no shopt in (/tmp/2239721.1.cstest.q:/usr/local/packages/openmpi-intel/intel/fce/10.1.008/bin:/usr/local/packages/openmpi-intel/intel/cce/10.1.008/bin:/usr/local/packages/openmpi-intel/openmpi-install/bin:/usr/local/bin/:/usr/local/packages/biomed/bin/:/usr/local/packages/java/jdk1.5.0_05/bin/:/usr/local/sge6_2/bin/lx24-amd64:/usr/local/packages/globus-2.4/bin:/usr/local/packages5/pgi/linux86-64/8.0-6/bin:/tmp/2239707.1.interactive.q:/usr/local/packages/openmpi-intel/intel/fce/10.1.008/bin:/usr/local/packages/openmpi-intel/intel/cce/10.1.008/bin:/usr/local/packages/openmpi-intel/openmpi-install/bin:/usr/local/bin/:/usr/local/packages/biomed/bin/:/usr/local/packages/java/jdk1.5.0_05/bin/:/usr/local/sge6_2/bin/lx24-amd64:/usr/local/packages/pvm3/lib:/usr/kerberos/bin:/usr/local/packages/globus-2.4/bin:/usr/local/mpich-gm2_PGI/bin:/usr/local/mpich-gm2_GNU:/usr/local/pgi/linux86-64/7.0/bin:/usr/local/bin:/bin:/usr/bin:/opt/novell/iprint/bin:/usr/X11R6/bin:/usr/local/packages5/scilab-5.1.1/bin:/usr/local/packages5/scilab-5.1.1:/home1/cs/cs1mkg/bin:/home1/cs/cs1mkg/lib:/usr/local/packages/cog-4_1_4/bin:/usr/local/packages/java/jdk1.5.0_05:/usr/local/packages/cog-4_1_4/lib:/usr/local/vdt/globus/bin:/home/cs1mkg/proj/iome2_2_1/bin:/usr/local/lib:/usr/local/xalan-c_1_10_0/c/bin:/usr/local/xerces-c_2_7_0/bin:/usr/pgi/linux86-64/5.2/bin:/usr/local/packages/srb3_3_1/utilities/bin:/usr/local/packages5/acml4.2.0-pgi/pgi64/lib:/home/cs1mkg/bin:/opt/454/bin:/usr/X11R6/bin:/usr/local/packages5/scilab-5.1.1/bin:/usr/local/packages5/scilab-5.1.1:/home1/cs/cs1mkg/bin:/home1/cs/cs1mkg/lib:/usr/local/packages/cog-4_1_4/bin:/usr/local/packages/java/jdk1.5.0_05:/usr/local/packages/cog-4_1_4/lib:/usr/local/vdt/globus/bin:/home/cs1mkg/proj/iome2_2_1/bin:/usr/local/lib:/usr/local/xalan-c_1_10_0/c/bin:/usr/local/xerces-c_2_7_0/bin:/usr/pgi/linux86-64/5.2/bin:/usr/local/packages/srb3_3_1/utilities/bin:/usr/local/packages5/acml4.2.0-pgi/pgi64/lib)
+License checkout failed.
+License Manager Error -4
+Maximum number of users for MATLAB_Distrib_Comp_Engine reached. 
+Try again later. 
+To see a list of current users use the lmstat utility or contact your License Administrator.
+
+Troubleshoot this issue by visiting: 
+http://www.mathworks.com/support/lme/R2009a/4
+
+Diagnostic Information:
+Feature: MATLAB_Distrib_Comp_Engine 
+License path: /usr/local/packages5/pgi/license.dat:/home/cs1mkg/.matlab/R2009a_licenses:/usr/local/packages5/matla
+b_r2009a/licenses/license.dat:/usr/local/packages5/matlab_r2009a/licenses/network.lic: 
+FLEXnet Licensing error: -4,132.

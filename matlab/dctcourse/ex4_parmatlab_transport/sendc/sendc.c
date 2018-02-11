@@ -1,0 +1,177 @@
+
+
+
+
+
+
+#include <mpi.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int ns=48;
+int isn[3]={48,480,4800};
+
+
+int main(int argc, char *argv[])
+{
+
+  int nnepp, ne, finishne, startne;
+  
+  //int nsamples[3]={ns/isn[0],ns/isn[1], ns/isn[2]};
+  int nsamples[3]={1,1, 1};
+  double ***u;
+  MPI_Status status;
+
+  //initial matrix proc 0 only distributed and gathered
+  double ***iu;
+
+  int i,j,k,l;
+
+  int labindex;		/* my rank in MPI_COMM_WORLD */
+  int numlabs;		/* size of MPI_COMM_WORLD */
+  double wall_time;
+  
+   u=(double ***)calloc(3,sizeof(double **));
+   iu=(double ***)calloc(3,sizeof(double **));
+/* Always initialise mpi by this call before using any mpi functions. */
+    MPI_Init(&argc, &argv);
+    
+/* Find out how many processors are taking part in the computations.  */  
+    MPI_Comm_size(MPI_COMM_WORLD, &numlabs); 
+
+/* Get the rank of the current process */      
+    MPI_Comm_rank(MPI_COMM_WORLD, &labindex);
+for(j=0;j<3;j++)
+	{
+//j=2;
+    		ne=isn[j];
+		//prepare the matrices
+		nnepp=ne/numlabs;
+    		//startne=1+(labindex-1)*nnepp;
+		startne=(labindex)*nnepp;
+                u[j]=(double **)calloc(isn[j],sizeof(double *));
+		for(k=0;k<nnepp;k++)
+			u[j][k]=(double *)calloc(isn[j],sizeof(double));
+ 		
+		//if(labindex==0)
+		//{
+                        iu[j]=(double **)calloc(isn[j],sizeof(double *));
+			for(k=0;k<isn[j];k++)
+				iu[j][k]=(double *)calloc(isn[j],sizeof(double));
+			for(k=0;k<isn[j];k++)
+				for(l=0;l<isn[j];l++)
+                                   		iu[j][k][l]=-1;
+		//}
+	}
+
+
+    for(j=0;j<3;j++)
+	{
+//j=2;
+    		ne=isn[j];
+		//prepare the matrices
+		nnepp=ne/numlabs;
+    		//startne=1+(labindex-1)*nnepp;
+		startne=(labindex)*nnepp;
+               // u[j]=(double **)calloc(isn[j],sizeof(double *));
+		//for(k=0;k<nnepp;k++)
+		//	u[j][k]=(double *)calloc(isn[j],sizeof(double));
+ 		
+		//if(labindex==0)
+		//{
+                //        iu[j]=(double **)calloc(isn[j],sizeof(double *));
+		//	for(k=0;k<isn[j];k++)
+		//		iu[j][k]=(double *)calloc(isn[j],sizeof(double));
+		//	for(k=0;k<isn[j];k++)
+		//		for(l=0;l<isn[j];l++)
+                 //                  		iu[j][k][l]=-1;
+		//}
+
+  		if(labindex==numlabs)
+		{
+    			finishne=ne;
+
+			
+		}  
+  		else
+    			finishne=startne+nnepp;
+
+ 	        printf("memory allocated on %d\n", labindex);
+  		wall_time = MPI_Wtime();
+
+		for(k=0; k<nsamples[j]; k++)
+		{
+
+		//distribute the matrices
+  if(labindex ==0)
+   {
+       for(i=1;i<numlabs;i++)
+       {
+ 			//startne=1+(i-1)*nnepp;
+			startne=(i)*nnepp;
+        		if(i==numlabs)
+            			finishne=ne;  
+        		else
+            			finishne=startne+nnepp;
+			MPI_Ssend( &(iu[j][0][startne]) , nnepp*isn[j], MPI_DOUBLE , i , 0 , MPI_COMM_WORLD);
+
+       //sumouter(startne:finishne,1)=labReceive(i)
+       }//end
+   }
+  else
+   {
+     //MPI_Ssend( &dparams , 2 , MPI_FLOAT , i , 0 , MPI_COMM_WORLD);
+
+	MPI_Recv(  &(u[j][0][0]) , nnepp*isn[j] , MPI_DOUBLE , 0 , 0 ,MPI_COMM_WORLD,&status);
+
+      //labSend(sumouter(startne:finishne,1),1);
+   }//end
+
+//MPI_Barrier(MPI_COMM_WORLD);
+//printf("matrix distributed on %d\n", labindex);
+  //do some calculations
+
+		//gather the matrices
+  		if(labindex ==0)
+   		{
+       			for(i=1;i<numlabs;i++)
+       			{
+        			startne=i*nnepp;
+        			if(i==numlabs)
+            				finishne=ne;  
+        			else
+            				finishne=startne+nnepp;
+ 				//printf("%d receiving from %d\n", labindex,i);
+				MPI_Recv(  &(iu[j][0][startne]) , nnepp*isn[j] , MPI_DOUBLE , i , 0 ,MPI_COMM_WORLD,&status);
+				//printf("%d received from %d\n", labindex,i);
+
+       			}//end
+   		}
+  		else
+   		{
+			//printf("%d sending to 0\n", labindex);
+
+			MPI_Ssend( &(u[j][0][0]) , nnepp*isn[j], MPI_DOUBLE , 0 , 0 , MPI_COMM_WORLD);
+			//printf("%d sent to 0\n", labindex);
+
+   		}//end
+//printf("here\n");
+//MPI_Barrier(MPI_COMM_WORLD);
+		}//end of samples loop repeat 
+
+                //compute average
+//MPI_Barrier(MPI_COMM_WORLD);
+      		wall_time = MPI_Wtime() - wall_time;
+     		if (labindex == 0)
+	  		printf("\n Wall clock time = %f %f secs\n",1000*wall_time, wall_time/nsamples[j]);
+
+
+	} //end of matrix size loop 
+     	MPI_Finalize(); 
+
+  free(u);
+  free(iu);
+  return 0;
+ }
+

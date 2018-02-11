@@ -1,0 +1,60 @@
+# MPI Makefile for intrompi examples
+
+.SUFFIXES: .f90 .f .o
+
+#MPI_HOME    = /usr/local/packages/openmpi-gnu-ether
+#MPI_HOME    = /usr/local/mpich-gm2_PGI
+MPI_HOME    = /usr/local/packages/mpich-gnu-gm
+MPI_INCLUDE =  $(MPI_HOME)/include 
+
+ARCH        = 
+COMM        =
+
+LIB_PATH    =
+LIBS        =
+
+#
+# C compiler and options
+#
+CC          = ${MPI_HOME}/bin/mpiCC 
+CLINKER     = ${CC}
+COPTFLAGS    = -O -fast
+
+F90         = ${MPI_HOME}/bin/mpif90
+FLINKER     = $(F90)
+FOPTFLAGS    = -O3 -fast
+
+LINKER=$(CLINKER)
+OPTFLAGS=$(COPTFLAGS)
+
+#
+# Object files
+#
+OBJ=    sendc.o
+#	dfill.o \
+#	domove.o \
+#        dscal.o \
+#
+#	velavg.o
+
+#
+# Compile
+#
+ex1:	$(OBJ)
+	$(CC) -o $@ $(OBJ) $(LIBS)
+
+#ex1:	$(OBJ)
+#	$(F90) -o $@ $(OBJ) $(LIBS)
+
+
+
+.c.o:
+	$(CC) -c $<
+
+.f90.o:
+	$(F90) -c $<
+#
+# Clean out object files and the executable.
+#
+clean:
+	rm *.o ex1
